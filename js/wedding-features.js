@@ -5,6 +5,8 @@
  * Handles:
  * 1. Google Calendar & Apple/Outlook (.ics) 1-Tap Sync
  * 2. Dual-Line WhatsApp RSVP Dispatcher (+237683532487 / +237674663789)
+ *    - Uses BMP-safe typography & pure ASCII unicode escapes so WhatsApp
+ *      Desktop/Web/Mobile never renders replacement characters ().
  * 3. Interactive Love Story Reader Toggle
  * 4. Mobile Sticky Thumb-Zone Navigation
  */
@@ -95,8 +97,8 @@
             const isExpanded = expandableStory.classList.toggle('expanded');
             toggleBtn.setAttribute('aria-expanded', isExpanded ? 'true' : 'false');
             toggleBtn.innerHTML = isExpanded
-                ? '<span>Read Less</span> <i class="toggle-arrow">↑</i>'
-                : '<span>Continue Reading Full Story</span> <i class="toggle-arrow">↓</i>';
+                ? '<span>Read Less</span> <i class="toggle-arrow">\u2191</i>'
+                : '<span>Continue Reading Full Story</span> <i class="toggle-arrow">\u2193</i>';
 
             if (!isExpanded) {
                 document.getElementById('story')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -136,58 +138,70 @@
             }
 
             const attendanceLabel = attendance === 'yes'
-                ? 'Joyfully Accepts (Will Attend) 🥂✨'
-                : 'Regretfully Declines (Sending Warm Wishes) 🤍';
+                ? 'Joyfully Accepts (Will Attend)'
+                : 'Regretfully Declines (Sending Warm Wishes)';
 
-            const eventsList = selectedEvents.length > 0 ? selectedEvents.join(' • ') : 'None selected';
+            const divider = '------------------------------';
 
             const lines = [
-                `❤️ *WEDDING RSVP — THELMA & GUILLAUME (#TG2026)*`,
-                `━━━━━━━━━━━━━━━━━━━━`,
-                `👤 *Guest:* ${guestName}`,
-                `✨ *Response:* ${attendanceLabel}`,
-                `📅 *Events:* ${eventsList}`,
-                `👥 *Guests:* ${guestCount}`,
+                `*WEDDING RSVP - THELMA & GUILLAUME (#TG2026)*`,
+                divider,
+                `*Guest Name:* ${guestName}`,
+                `*Response:* ${attendanceLabel}`,
+                `*Number of Guests:* ${guestCount}`,
             ];
 
-            if (guestMessage) {
-                lines.push(`💌 *Note:* "${guestMessage}"`);
+            if (selectedEvents.length > 0) {
+                lines.push(`*Celebrations Attending:*`);
+                selectedEvents.forEach(ev => {
+                    lines.push(`  - ${ev}`);
+                });
+            } else {
+                lines.push(`*Celebrations Attending:* None`);
             }
-            lines.push(`━━━━━━━━━━━━━━━━━━━━`);
-            lines.push(`📍 *27–28 Nov 2026 • Limbe • #TG2026*`);
+
+            if (guestMessage) {
+                lines.push('');
+                lines.push(`*Blessings / Note for the Couple:*`);
+                lines.push(`"${guestMessage}"`);
+            }
+
+            lines.push(divider);
+            lines.push(`*27-28 Nov 2026 | Limbe | #TG2026*`);
 
             const fullText = lines.join('\n');
             const encodedText = encodeURIComponent(fullText);
 
-            const waUrl1 = `https://wa.me/237683532487?text=${encodedText}`;
-            const waUrl2 = `https://wa.me/237674663789?text=${encodedText}`;
-            const chosenUrl = `https://wa.me/${primaryPhone}?text=${encodedText}`;
+            // Use api.whatsapp.com/send directly with UTF-8 percent-encoding
+            const waUrl1 = `https://api.whatsapp.com/send?phone=237683532487&text=${encodedText}`;
+            const waUrl2 = `https://api.whatsapp.com/send?phone=237674663789&text=${encodedText}`;
+            const chosenUrl = `https://api.whatsapp.com/send?phone=${primaryPhone}&text=${encodedText}`;
 
             rsvpForm.style.display = 'none';
 
             if (rsvpSuccess) {
                 rsvpSuccess.innerHTML = `
-                    <div class="success-mark">✓</div>
+                    <div class="success-mark">\u2713</div>
                     <h3>Your RSVP is Ready, ${guestName}!</h3>
                     <p class="rsvp-confirm-sub">
                         WhatsApp is opening to send your #TG2026 confirmation. You can also tap either RSVP line below:
                     </p>
                     <div class="wa-action-buttons">
                         <a href="${waUrl1}" target="_blank" rel="noopener noreferrer" class="wa-send-btn">
-                            <span class="wa-icon">💬</span> SEND TO LINE 1 (+237 683 532 487)
+                            SEND TO LINE 1 (+237 683 532 487)
                         </a>
                         <a href="${waUrl2}" target="_blank" rel="noopener noreferrer" class="wa-send-btn wa-send-btn-alt">
-                            <span class="wa-icon">💬</span> SEND TO LINE 2 (+237 674 663 789)
+                            SEND TO LINE 2 (+237 674 663 789)
                         </a>
                         <button type="button" class="wa-copy-btn" id="waCopyBtn">
-                            📋 COPY RSVP MESSAGE
+                            COPY RSVP MESSAGE
                         </button>
                         <button type="button" class="wa-reset-btn" id="waEditBtn">
-                            ✎ Edit Response
+                            Edit Response
                         </button>
                     </div>
                     <div id="copyFeedback" class="copy-feedback" style="display: none;">
-                        ✓ RSVP details copied to clipboard!
+                        \u2713 RSVP details copied to clipboard!
                     </div>
                 `;
                 rsvpSuccess.classList.add('show');
@@ -231,23 +245,18 @@
 
         nav.innerHTML = `
             <a href="#story" class="thumb-nav-item">
-                <span class="thumb-icon">❤️</span>
                 <span class="thumb-label">Our Story</span>
             </a>
             <a href="#schedule" class="thumb-nav-item">
-                <span class="thumb-icon">📅</span>
                 <span class="thumb-label">Schedule</span>
             </a>
             <a href="#locations" class="thumb-nav-item">
-                <span class="thumb-icon">📍</span>
                 <span class="thumb-label">Venues</span>
             </a>
             <a href="#gallery" class="thumb-nav-item">
-                <span class="thumb-icon">✨</span>
                 <span class="thumb-label">Photos</span>
             </a>
             <a href="#rsvp" class="thumb-nav-item thumb-nav-rsvp">
-                <span class="thumb-icon">💌</span>
                 <span class="thumb-label">RSVP</span>
             </a>
         `;
