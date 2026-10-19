@@ -1,26 +1,29 @@
 /**
  * ====================================================================
- * WEDDING INVITATION CONFIGURATION — GUILLAUME & THELMA
+ * WEDDING INVITATION CONFIGURATION — THELMA & GUILLAUME (TG2026)
  * ====================================================================
- * Central configuration file for Guillaume & Thelma's Wedding Website.
+ * Central configuration file for Thelma & Guillaume's Wedding Website.
  */
 
 const WEDDING_CONFIG = {
     couple: {
-        partner1: "Guillaume",
-        partner2: "Thelma",
-        monogram: "G & T",
-        title: "Guillaume & Thelma | 27 — 28 November 2026",
+        partner1: "Thelma",
+        partner2: "Guillaume",
+        monogram: "T & G",
+        shortMonogram: "TG",
+        hashtag: "#TG2026",
+        code: "TG2026",
+        title: "Thelma & Guillaume | #TG2026 • 27 — 28 November 2026",
         openingSubtitle: "TOGETHER WITH THEIR FAMILIES",
         heroEyebrow: "WE ARE GETTING MARRIED",
-        locationSummary: "LIMBE, CAMEROON",
+        locationSummary: "LIMBE, CAMEROON • #TG2026",
         storyHeadline: "The Day I Met My Forever",
-        storySubheadline: "The Story of Guillaume & Thelma",
+        storySubheadline: "The Story of Thelma & Guillaume",
         storyPullQuote: "“We went to Teacher Training College to prepare for our careers. Little did we know that, somewhere between the lessons and the dreams, life was preparing one of its most beautiful lessons for us. The lesson was love. The blessing was you. And the journey ahead is forever.”",
-        storySignoff: "Forever yours, Guillaume ❤️ Thelma",
+        storySignoff: "Forever yours, Thelma ❤️ Guillaume",
         closingHeading: "Thank you for being<br>part of our forever.",
         footerTagline: "THE LESSON WAS LOVE • THE BLESSING WAS YOU",
-        footerCopy: "Guillaume & Thelma • 27–28 November 2026 • Limbe"
+        footerCopy: "Thelma & Guillaume • #TG2026 • 27–28 November 2026 • Limbe"
     },
 
     dates: {
@@ -65,11 +68,11 @@ const WEDDING_CONFIG = {
             venue: "Family Residence, Mile 4 Promise Land",
             mapUrl: "https://maps.google.com/?q=Mile+4+Limbe,+Cameroon",
             calendar: {
-                title: "Guillaume & Thelma — Cultural Rites",
+                title: "Thelma & Guillaume (#TG2026) — Cultural Rites",
                 startIso: "2026-11-27T16:00:00",
                 endIso: "2026-11-27T22:00:00",
                 location: "Family Residence, Mile 4 Promise Land, Limbe",
-                description: "Cultural Rites celebration for Guillaume & Thelma at the Family Residence, Mile 4 Promise Land, Limbe (4:00 PM)."
+                description: "Cultural Rites celebration for Thelma & Guillaume (#TG2026) at the Family Residence, Mile 4 Promise Land, Limbe (4:00 PM)."
             }
         },
         {
@@ -101,11 +104,11 @@ const WEDDING_CONFIG = {
                 }
             ],
             calendar: {
-                title: "Guillaume & Thelma — Civil Wedding, Blessings & Reception",
+                title: "Thelma & Guillaume (#TG2026) — Civil Wedding, Blessings & Reception",
                 startIso: "2026-11-28T10:00:00",
                 endIso: "2026-11-28T23:00:00",
                 location: "Limbe 1 Council (10:00 AM) & Ace Event Center, Mile 2 Limbe (4:00 PM)",
-                description: "10:00 AM: Civil Signing at Limbe 1 Council | 12:00 PM: Blessings | 4:00 PM: Reception at Ace Event Center, Mile 2 Limbe."
+                description: "Thelma & Guillaume (#TG2026) — 10:00 AM: Civil Signing at Limbe 1 Council | 12:00 PM: Blessings | 4:00 PM: Reception at Ace Event Center, Mile 2 Limbe."
             }
         }
     ],

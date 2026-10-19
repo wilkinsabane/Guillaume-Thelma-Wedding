@@ -1,6 +1,6 @@
 /**
  * ====================================================================
- * WEDDING FEATURES ENGINE — GUILLAUME & THELMA
+ * WEDDING FEATURES ENGINE — THELMA & GUILLAUME (TG2026)
  * ====================================================================
  * Handles:
  * 1. Google Calendar & Apple/Outlook (.ics) 1-Tap Sync
@@ -55,7 +55,7 @@
         const icsContent = [
             'BEGIN:VCALENDAR',
             'VERSION:2.0',
-            'PRODID:-//Guillaume and Thelma Wedding//EN',
+            'PRODID:-//Thelma and Guillaume Wedding TG2026//EN',
             'CALSCALE:GREGORIAN',
             'METHOD:PUBLISH',
             'BEGIN:VEVENT',
@@ -72,7 +72,7 @@
         const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
         const link = document.createElement('a');
         link.href = window.URL.createObjectURL(blob);
-        link.setAttribute('download', `Guillaume-Thelma-${eventId}.ics`);
+        link.setAttribute('download', `Thelma-Guillaume-TG2026-${eventId}.ics`);
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -142,7 +142,7 @@
             const eventsList = selectedEvents.length > 0 ? selectedEvents.join(' • ') : 'None selected';
 
             const lines = [
-                `❤️ *WEDDING RSVP — GUILLAUME & THELMA*`,
+                `❤️ *WEDDING RSVP — THELMA & GUILLAUME (#TG2026)*`,
                 `━━━━━━━━━━━━━━━━━━━━`,
                 `👤 *Guest:* ${guestName}`,
                 `✨ *Response:* ${attendanceLabel}`,
@@ -154,7 +154,7 @@
                 lines.push(`💌 *Note:* "${guestMessage}"`);
             }
             lines.push(`━━━━━━━━━━━━━━━━━━━━`);
-            lines.push(`📍 *27–28 Nov 2026 • Limbe*`);
+            lines.push(`📍 *27–28 Nov 2026 • Limbe • #TG2026*`);
 
             const fullText = lines.join('\n');
             const encodedText = encodeURIComponent(fullText);
@@ -170,7 +170,7 @@
                     <div class="success-mark">✓</div>
                     <h3>Your RSVP is Ready, ${guestName}!</h3>
                     <p class="rsvp-confirm-sub">
-                        WhatsApp is opening to send your confirmation. You can also tap either RSVP line below:
+                        WhatsApp is opening to send your #TG2026 confirmation. You can also tap either RSVP line below:
                     </p>
                     <div class="wa-action-buttons">
                         <a href="${waUrl1}" target="_blank" rel="noopener noreferrer" class="wa-send-btn">

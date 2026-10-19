@@ -1671,6 +1671,21 @@ button {
     animation: openingFloatIn 0.5s ease forwards;
 }
 
+.success-mark {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--bg-sage-soft);
+    color: var(--sage-deep);
+    border: 1.5px solid var(--sage);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
 .rsvp-success h3 {
     font-family: var(--font-serif);
     font-size: 2.2rem;
@@ -1684,7 +1699,8 @@ button {
     margin-bottom: 24px;
 }
 
-.rsvp-fallback-actions {
+.rsvp-fallback-actions,
+.wa-action-buttons {
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -1692,10 +1708,12 @@ button {
     margin: 0 auto;
 }
 
-.wa-direct-btn {
+.wa-direct-btn,
+.wa-send-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    gap: 8px;
     padding: 15px 24px;
     border-radius: 999px;
     background: #1F7A4C;
@@ -1707,7 +1725,8 @@ button {
     transition: all 0.25s ease;
 }
 
-.wa-direct-btn:hover {
+.wa-direct-btn:hover,
+.wa-send-btn:hover {
     background: #17603B;
     transform: translateY(-2px);
 }
@@ -1747,6 +1766,7 @@ button {
     color: var(--sage-deep);
     font-weight: 600;
     min-height: 20px;
+    margin-top: 12px;
 }
 
 /* ============================================================
@@ -2060,31 +2080,46 @@ button {
     -webkit-backdrop-filter: blur(14px);
     border: 1.5px solid var(--gold);
     box-shadow: 0 14px 36px rgba(78, 17, 34, 0.18);
+    transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.4s ease;
 }
 
-.sticky-nav-link {
-    padding: 9px 16px;
+.sticky-thumb-nav.hidden-during-opening {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateX(-50%) translateY(20px);
+}
+
+.sticky-nav-link,
+.thumb-nav-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 9px 14px;
     border-radius: 999px;
-    font-size: 0.7rem;
+    font-size: 0.68rem;
     font-weight: 600;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
     color: var(--text-dark);
     transition: all 0.25s ease;
     white-space: nowrap;
 }
 
-.sticky-nav-link:hover {
+.sticky-nav-link:hover,
+.thumb-nav-item:hover {
     color: var(--burgundy);
     background: var(--bg-burgundy-soft);
 }
 
-.sticky-nav-cta {
+.sticky-nav-cta,
+.thumb-nav-rsvp {
     background: var(--burgundy);
     color: var(--gold-champagne) !important;
 }
 
-.sticky-nav-cta:hover {
+.sticky-nav-cta:hover,
+.thumb-nav-rsvp:hover {
     background: var(--burgundy-light);
 }
 
