@@ -122,7 +122,7 @@
 
             <div class="story-image reveal-right">
 
-                <img src="images/story.png" alt="Guillaume and Thelma">
+                <img src="images/story.webp" alt="Guillaume and Thelma">
 
             </div>
 
@@ -143,7 +143,7 @@
      WEDDING TIMELINE
 ====================================== -->
 
-    <section class="timeline-section">
+    <section class="timeline-section" id="schedule">
 
         <div class="timeline-container">
 
@@ -305,7 +305,7 @@
 
     </section>
 
-    <section class="details-section">
+    <section class="details-section" id="locations">
 
         <div class="details-container">
 
@@ -418,6 +418,15 @@
                         <span>↗</span>
                     </a>
 
+                    <div class="calendar-actions">
+                        <button type="button" class="cal-btn" onclick="openGoogleCalendar('cultural-rites')">
+                            📅 Google Calendar
+                        </button>
+                        <button type="button" class="cal-btn" onclick="downloadIcsCalendar('cultural-rites')">
+                            📥 Apple / Outlook (.ics)
+                        </button>
+                    </div>
+
                 </div>
 
             </div>
@@ -513,6 +522,15 @@
                         <span>↗</span>
                     </a>
 
+                    <div class="calendar-actions">
+                        <button type="button" class="cal-btn" onclick="openGoogleCalendar('civil-wedding')">
+                            📅 Google Calendar
+                        </button>
+                        <button type="button" class="cal-btn" onclick="downloadIcsCalendar('civil-wedding')">
+                            📥 Apple / Outlook (.ics)
+                        </button>
+                    </div>
+
                 </div>
 
             </div>
@@ -525,7 +543,7 @@
      PHOTO GALLERY
 ========================= -->
 
-    <section class="gallery-section">
+    <section class="gallery-section" id="gallery">
 
         <div class="gallery-container">
 
@@ -556,7 +574,7 @@
 
                     <div class="gallery-image">
 
-                        <img src="images/gallery-1.png" alt="Guillaume and Thelma">
+                        <img src="images/gallery-1.webp" alt="Guillaume and Thelma" loading="lazy">
 
                     </div>
 
@@ -569,7 +587,7 @@
 
                     <div class="gallery-image">
 
-                        <img src="images/gallery-2.png" alt="Guillaume and Thelma">
+                        <img src="images/gallery-2.webp" alt="Guillaume and Thelma" loading="lazy">
 
                     </div>
 
@@ -582,7 +600,7 @@
 
                     <div class="gallery-image">
 
-                        <img src="images/gallery-3.png" alt="Guillaume and Thelma">
+                        <img src="images/gallery-3.webp" alt="Guillaume and Thelma" loading="lazy">
 
                     </div>
 
@@ -595,7 +613,7 @@
 
                     <div class="gallery-image">
 
-                        <img src="images/gallery-4.png" alt="Guillaume and Thelma">
+                        <img src="images/gallery-4.webp" alt="Guillaume and Thelma" loading="lazy">
 
                     </div>
 
@@ -608,7 +626,7 @@
 
                     <div class="gallery-image">
 
-                        <img src="images/gallery-5.png" alt="Guillaume and Thelma">
+                        <img src="images/gallery-5.webp" alt="Guillaume and Thelma" loading="lazy">
 
                     </div>
 
@@ -621,7 +639,7 @@
 
                     <div class="gallery-image">
 
-                        <img src="images/gallery-6.png" alt="Guillaume and Thelma">
+                        <img src="images/gallery-6.webp" alt="Guillaume and Thelma" loading="lazy">
 
                     </div>
 
@@ -634,7 +652,7 @@
 
                     <div class="gallery-image">
 
-                        <img src="images/gallery-7.png" alt="Guillaume and Thelma">
+                        <img src="images/gallery-7.webp" alt="Guillaume and Thelma" loading="lazy">
 
                     </div>
 
@@ -647,7 +665,7 @@
 
                     <div class="gallery-image">
 
-                        <img src="images/save-the-date.png" alt="Guillaume and Thelma - Save The Date">
+                        <img src="images/save-the-date.webp" alt="Guillaume and Thelma - Save The Date" loading="lazy">
 
                     </div>
 
@@ -657,6 +675,37 @@
 
         </div>
 
+    </section>
+
+    <!-- =========================
+     DRESS CODE & PALETTE
+========================= -->
+    <section class="dresscode-section" id="dresscode">
+        <div class="dresscode-container">
+            <p class="section-label reveal">DRESS CODE & PALETTE</p>
+            <h2 class="dresscode-title reveal">Celebrate in Elegance</h2>
+            <p class="dresscode-note reveal">
+                Formal / Traditional attire. We invite you to share our joy and style by incorporating our wedding tones:
+            </p>
+            <div class="swatch-grid reveal">
+                <div class="swatch-card">
+                    <div class="swatch-circle" style="background-color: #11100F;"></div>
+                    <span class="swatch-name">Onyx Black</span>
+                </div>
+                <div class="swatch-card">
+                    <div class="swatch-circle" style="background-color: #D4AF37;"></div>
+                    <span class="swatch-name">Champagne Gold</span>
+                </div>
+                <div class="swatch-card">
+                    <div class="swatch-circle" style="background-color: #F5F0E6;"></div>
+                    <span class="swatch-name">Warm Ivory</span>
+                </div>
+                <div class="swatch-card">
+                    <div class="swatch-circle" style="background-color: #6E1B3B;"></div>
+                    <span class="swatch-name">Royal Burgundy</span>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="gift-section">
@@ -701,7 +750,7 @@
 
     </section>
 
-    <section class="rsvp-section">
+    <section class="rsvp-section" id="rsvp">
         <div class="rsvp-container">
 
             <div class="rsvp-heading">
@@ -716,7 +765,7 @@
 
                 <p class="rsvp-intro reveal">
                     Your presence would make our celebration
-                    even more special.
+                    even more special. Confirm directly with the couple via WhatsApp.
                 </p>
             </div>
 
@@ -828,9 +877,9 @@
                         placeholder="Leave us a little message..."></textarea>
                 </div>
 
-                <button type="submit" class="rsvp-button">
-                    SEND RSVP
-                    <span>↗</span>
+                <button type="submit" class="rsvp-button" style="background: #25D366; border-color: #25D366; color: #ffffff;">
+                    CONFIRM VIA WHATSAPP
+                    <span style="font-size: 14px;">💬</span>
                 </button>
 
             </form>
@@ -959,7 +1008,9 @@
 
     <!-- JAVASCRIPT -->
 
+    <script src="wedding.config.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/wedding-features.js"></script>
 
 </body>
 

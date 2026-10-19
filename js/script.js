@@ -198,7 +198,9 @@ updateTimeline();
 ========================= */
 
 const countdownTarget =
-    new Date("2026-11-27T00:00:00+01:00").getTime();
+    (window.WEDDING_CONFIG && window.WEDDING_CONFIG.dates && window.WEDDING_CONFIG.dates.countdownTarget)
+        ? new Date(window.WEDDING_CONFIG.dates.countdownTarget).getTime()
+        : new Date("2026-11-27T00:00:00+01:00").getTime();
 
 const daysElement =
     document.getElementById("days");
@@ -565,155 +567,9 @@ document.addEventListener(
 );
 
 /* ========================================
-   RSVP FORM
+   RSVP FORM (Handled via wedding-features.js for WhatsApp)
 ======================================== */
 
-const rsvpForm =
-    document.getElementById("rsvpForm");
-
-const rsvpSuccess =
-    document.getElementById("rsvpSuccess");
-
-const RSVP_ENDPOINT =
-    "https://script.google.com/macros/s/AKfycbw35WugU42wARNxXKBG6Y3kUmpxLDCc2-ABaU9iOL4zaU_gSBZg4dC_mCrNYD7YwFuB/exec";
-
-
-if (rsvpForm && rsvpSuccess) {
-
-    rsvpForm.addEventListener(
-        "submit",
-        async function (event) {
-
-            event.preventDefault();
-
-            const selectedEvents =
-                document.querySelectorAll(
-                    'input[name="event"]:checked'
-                );
-
-            if (selectedEvents.length === 0) {
-
-                alert(
-                    "Please select at least one celebration."
-                );
-
-                return;
-
-            }
-
-            const submitButton =
-                rsvpForm.querySelector(
-                    ".rsvp-button"
-                );
-
-            submitButton.disabled = true;
-
-            submitButton.innerHTML =
-                "SENDING...";
-
-            const guestName =
-                document.getElementById(
-                    "guestName"
-                ).value.trim();
-
-            const attendance =
-                document.querySelector(
-                    'input[name="attendance"]:checked'
-                ).value;
-
-            const guestCount =
-                document.getElementById(
-                    "guestCount"
-                ).value;
-
-            const guestMessage =
-                document.getElementById(
-                    "guestMessage"
-                ).value.trim();
-
-            const events =
-                Array.from(selectedEvents)
-                    .map(function (event) {
-                        return event.value;
-                    })
-                    .join(", ");
-
-
-            const rsvpData = {
-
-                guestName: guestName,
-
-                attendance: attendance,
-
-                events: events,
-
-                guestCount: guestCount,
-
-                message: guestMessage
-
-            };
-
-
-            try {
-
-                fetch(
-                    RSVP_ENDPOINT,
-                    {
-                        method: "POST",
-
-                        mode: "no-cors",
-
-                        headers: {
-                            "Content-Type":
-                                "text/plain;charset=utf-8"
-                        },
-
-                        body:
-                            JSON.stringify(
-                                rsvpData
-                            )
-                    }
-                );
-
-                /*
-                   The request has been sent to Google
-                   Apps Script.
-            
-                   Because no-cors gives the browser
-                   an opaque response, we don't wait
-                   for a readable response here.
-                */
-
-                rsvpForm.style.display =
-                    "none";
-
-                rsvpSuccess.classList.add(
-                    "show");
-
-
-            } catch (error) {
-
-                console.error(
-                    "RSVP submission failed:",
-                    error
-                );
-
-                submitButton.disabled =
-                    false;
-
-                submitButton.innerHTML =
-                    "SEND RSVP <span>↗</span>";
-
-                alert(
-                    "Something went wrong. Please try again."
-                );
-
-            }
-
-        }
-    );
-
-}
 
 /* ========================================
    BACK TO TOP
