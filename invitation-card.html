@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thelma &amp; Guillaume (#TG2026) — Physical Wedding Invitation Card (Print-Ready)</title>
+
+    <!-- Editorial Wedding Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --ivory: #FFFCF7;
+            --ivory-warm: #F8F2E7;
+            --burgundy: #6E1B33;
+            --burgundy-deep: #4A1021;
+            --gold: #C59B38;
+            --gold-bright: #D4AF37;
+            --gold-light: #E8CA78;
+            --sage: #7D947B;
+            --sage-deep: #536951;
+            --sage-soft: #EBF0EA;
+            --text-dark: #2A1E21;
+            --text-muted: #6E5D61;
+
+            --font-serif: 'Cormorant Garamond', Georgia, serif;
+            --font-sans: 'Montserrat', sans-serif;
+            --font-script: 'Great Vibes', cursive;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #23161A;
+            color: var(--text-dark);
+            font-family: var(--font-sans);
+            min-height: 100vh;
+            padding: 32px 20px 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+        }
+
+        /* =====================================================
+           SCREEN-ONLY STUDIO TOOLBAR (HIDDEN ON PRINT)
+        ===================================================== */
+        .print-toolbar {
+            max-width: 1060px;
+            width: 100%;
+            background: #FFFDF9;
+            border: 1.5px solid var(--gold);
+            border-radius: 18px;
+            padding: 22px 26px;
+            margin-bottom: 34px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+        }
+
+        .toolbar-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 16px;
+            padding-bottom: 16px;
+            margin-bottom: 16px;
+            border-bottom: 1px solid rgba(197, 155, 56, 0.3);
+        }
+
+        .toolbar-brand h1 {
+            font-family: var(--font-serif);
+            font-size: 1.65rem;
+            color: var(--burgundy);
+            line-height: 1.15;
+        }
+
+        .toolbar-brand p {
+            font-size: 0.76rem;
+            color: var(--text-muted);
+            letter-spacing: 0.08em;
+        }
+
+        .toolbar-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .btn-print {
+            background: linear-gradient(135deg, var(--burgundy) 0%, var(--burgundy-deep) 100%);
+            color: #FFFDF9;
+            border: 1px solid var(--gold-light);
+            padding: 12px 24px;
+            border-radius: 999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.25s ease;
+        }
+
+        .btn-print:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(110, 27, 51, 0.35);
+        }
+
+        .btn-back {
+            background: var(--ivory-warm);
+            color: var(--burgundy);
+            border: 1px solid var(--gold);
+            padding: 12px 18px;
+            border-radius: 999px;
+            font-size: 0.73rem;
+            font-weight: 600;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .toolbar-controls {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 14px;
+            align-items: end;
+        }
+
+        .control-field label {
+            display: block;
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: var(--burgundy);
+            margin-bottom: 6px;
+        }
+
+        .control-field input,
+        .control-field select {
+            width: 100%;
+            padding: 10px 12px;
+            border-radius: 8px;
+            border: 1px solid rgba(197, 155, 56, 0.5);
+            background: var(--ivory);
+            font-family: var(--font-sans);
+            font-size: 0.85rem;
+            color: var(--text-dark);
+        }
+
+        .toolbar-tip {
+            margin-top: 14px;
+            font-size: 0.75rem;
+            color: var(--sage-deep);
+            background: var(--sage-soft);
+            padding: 8px 14px;
+            border-radius: 8px;
+            border-left: 3px solid var(--sage);
+        }
+
+        /* =====================================================
+           PRINT SHEET WRAPPER
+        ===================================================== */
+        .print-stage {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 36px;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        /* =====================================================
+           5" x 7" LUXURY ARCH INVITATION CARD
+           Exact 5:7 aspect ratio (5in x 7in = 127mm x 177.8mm)
+        ===================================================== */
+        .invitation-card {
+            width: 5in;
+            height: 7in;
+            background:
+                radial-gradient(circle at 50% 0%, rgba(232, 202, 120, 0.18) 0%, transparent 55%),
+                radial-gradient(circle at 50% 100%, rgba(125, 148, 123, 0.14) 0%, transparent 55%),
+                linear-gradient(180deg, #FFFCF7 0%, #FAF4E8 100%);
+            position: relative;
+            padding: 0.22in;
+            box-shadow: 0 28px 70px rgba(0, 0, 0, 0.55);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 1px solid rgba(197, 155, 56, 0.45);
+        }
+
+        /* Crop Marks for Print Shop Trimming */
+        .crop-mark {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            pointer-events: none;
+            z-index: 10;
+        }
+
+        .crop-tl {
+            top: 4px;
+            left: 4px;
+            border-top: 1px solid rgba(110, 27, 51, 0.45);
+            border-left: 1px solid rgba(110, 27, 51, 0.45);
+        }
+
+        .crop-tr {
+            top: 4px;
+            right: 4px;
+            border-top: 1px solid rgba(110, 27, 51, 0.45);
+            border-right: 1px solid rgba(110, 27, 51, 0.45);
+        }
+
+        .crop-bl {
+            bottom: 4px;
+            left: 4px;
+            border-bottom: 1px solid rgba(110, 27, 51, 0.45);
+            border-left: 1px solid rgba(110, 27, 51, 0.45);
+        }
+
+        .crop-br {
+            bottom: 4px;
+            right: 4px;
+            border-bottom: 1px solid rgba(110, 27, 51, 0.45);
+            border-right: 1px solid rgba(110, 27, 51, 0.45);
+        }
+
+        /* Outer Burgundy & Double Champagne Gold Foil Frame */
+        .card-outer-frame {
+            width: 100%;
+            height: 100%;
+            border: 2px solid var(--burgundy);
+            padding: 4px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-inner-arch {
+            width: 100%;
+            height: 100%;
+            border: 1.2px solid var(--gold);
+            border-radius: 140px 140px 12px 12px;
+            padding: 16px 18px 14px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            background: rgba(255, 252, 247, 0.72);
+        }
+
+        /* Corner Botanical Flourishes (Sage & Gold SVG) */
+        .corner-botanical {
+            position: absolute;
+            width: 78px;
+            height: 78px;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .botanical-tl {
+            top: 2px;
+            left: 2px;
+        }
+
+        .botanical-tr {
+            top: 2px;
+            right: 2px;
+            transform: scaleX(-1);
+        }
+
+        /* Top Royal Monogram Crest */
+        .card-crest {
+            position: relative;
+            z-index: 2;
+            margin-top: 2px;
+        }
+
+        .crest-circle {
+            width: 48px;
+            height: 48px;
+            margin: 0 auto 4px;
+            border-radius: 50%;
+            border: 1.5px solid var(--gold);
+            background: linear-gradient(135deg, var(--burgundy) 0%, var(--burgundy-deep) 100%);
+            color: var(--gold-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-serif);
+            font-size: 1.05rem;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            box-shadow: 0 3px 10px rgba(110, 27, 51, 0.2);
+        }
+
+        .crest-circle span {
+            font-family: var(--font-script);
+            font-size: 0.95rem;
+            color: #FFFDF9;
+            margin: 0 2px;
+        }
+
+        .crest-hashtag {
+            font-size: 0.54rem;
+            font-weight: 700;
+            letter-spacing: 0.28em;
+            color: var(--sage-deep);
+            text-transform: uppercase;
+        }
+
+        /* Host Invitation Line */
+        .card-families {
+            font-size: 0.56rem;
+            font-weight: 600;
+            letter-spacing: 0.24em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            line-height: 1.45;
+            margin-top: 2px;
+        }
+
+        /* Couple Names */
+        .card-couple-names {
+            margin: 2px 0;
+        }
+
+        .card-couple-names h2 {
+            font-family: var(--font-serif);
+            font-size: 2.15rem;
+            font-weight: 700;
+            color: var(--burgundy);
+            line-height: 1.02;
+            letter-spacing: 0.02em;
+        }
+
+        .card-couple-names .amp {
+            font-family: var(--font-script);
+            font-size: 1.65rem;
+            font-weight: 400;
+            color: var(--gold);
+            display: inline-block;
+            margin: 0 6px;
+        }
+
+        .card- divider-ornament {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            width: 140px;
+            margin: 2px auto;
+        }
+
+        .gold-rule {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            width: 160px;
+            margin: 2px auto;
+        }
+
+        .gold-rule span {
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+        }
+
+        .gold-rule i {
+            font-style: normal;
+            font-size: 0.65rem;
+            color: var(--gold);
+        }
+
+        /* Two-Day Wedding Schedule Grid */
+        .card-events-grid {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 6px;
+            margin: 2px 0;
+        }
+
+        .card-event-box {
+            background: rgba(248, 242, 231, 0.75);
+            border: 1px solid rgba(197, 155, 56, 0.38);
+            border-radius: 8px;
+            padding: 6px 10px;
+        }
+
+        .card-event-day {
+            font-size: 0.54rem;
+            font-weight: 700;
+            letter-spacing: 0.22em;
+            color: var(--burgundy);
+            text-transform: uppercase;
+            margin-bottom: 2px;
+        }
+
+        .card-event-details {
+            font-family: var(--font-serif);
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            line-height: 1.25;
+        }
+
+        .card-event-details span {
+            color: var(--burgundy);
+            font-weight: 700;
+        }
+
+        .card-event-sub {
+            font-size: 0.58rem;
+            color: var(--text-muted);
+            font-weight: 500;
+            margin-top: 1px;
+        }
+
+        /* Colours of the Day Pill */
+        .card-palette-row {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 12px;
+            border-radius: 999px;
+            background: #FFFDF9;
+            border: 1px solid rgba(125, 148, 123, 0.45);
+        }
+
+        .swatch-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .swatch-b { background: var(--burgundy); }
+        .swatch-g { background: var(--gold-bright); }
+        .swatch-s { background: var(--sage); }
+
+        .palette-text {
+            font-size: 0.53rem;
+            font-weight: 700;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: var(--sage-deep);
+        }
+
+        /* =====================================================
+           DEDICATED GUEST NAME & SEAT NUMBER BOX (KEY FEATURE)
+        ===================================================== */
+        .guest-pass-box {
+            width: 100%;
+            background: linear-gradient(135deg, #FFFDF9 0%, #F7EFE2 100%);
+            border: 1.5px solid var(--burgundy);
+            border-radius: 10px;
+            padding: 8px 12px;
+            display: grid;
+            grid-template-columns: 1fr 112px;
+            gap: 10px;
+            align-items: center;
+            text-align: left;
+            box-shadow: inset 0 0 0 2px rgba(197, 155, 56, 0.22);
+        }
+
+        .guest-name-area {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .pass-label {
+            font-size: 0.5rem;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--burgundy);
+            margin-bottom: 3px;
+        }
+
+        .guest-write-line {
+            min-height: 22px;
+            border-bottom: 1.2px dotted var(--burgundy);
+            display: flex;
+            align-items: flex-end;
+            padding-bottom: 2px;
+            font-family: var(--font-serif);
+            font-size: 0.98rem;
+            font-weight: 700;
+            font-style: italic;
+            color: var(--text-dark);
+        }
+
+        .guest-prefix {
+            font-family: var(--font-serif);
+            font-style: italic;
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: var(--gold);
+            margin-right: 6px;
+        }
+
+        .seat-badge-area {
+            border-left: 1px dashed var(--gold);
+            padding-left: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .seat-write-box {
+            width: 100%;
+            min-height: 24px;
+            border: 1.2px solid var(--gold);
+            border-radius: 6px;
+            background: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-serif);
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--burgundy);
+        }
+
+        /* =====================================================
+           BOTTOM RSVP & QR FOOTER
+        ===================================================== */
+        .card-footer-row {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            padding-top: 4px;
+            border-top: 1px solid rgba(197, 155, 56, 0.3);
+            text-align: left;
+        }
+
+        .rsvp-lines-info {
+            flex: 1;
+        }
+
+        .rsvp-lines-label {
+            font-size: 0.5rem;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            color: var(--burgundy);
+            text-transform: uppercase;
+        }
+
+        .rsvp-phones {
+            font-size: 0.62rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            letter-spacing: 0.04em;
+            margin-top: 1px;
+        }
+
+        .rsvp-quote-mini {
+            font-family: var(--font-serif);
+            font-style: italic;
+            font-size: 0.68rem;
+            color: var(--sage-deep);
+            margin-top: 1px;
+        }
+
+        .qr-frame {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: #FFFFFF;
+            border: 1px solid var(--gold);
+            border-radius: 6px;
+            padding: 3px 6px;
+        }
+
+        .qr-frame svg {
+            width: 34px;
+            height: 34px;
+            display: block;
+        }
+
+        .qr-caption {
+            font-size: 0.45rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--burgundy);
+            line-height: 1.25;
+        }
+
+        /* =====================================================
+           BACK OF CARD (PORTRAIT REVERSE SIDE)
+        ===================================================== */
+        .card-back-inner {
+            width: 100%;
+            height: 100%;
+            border: 1.2px solid var(--gold);
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            text-align: center;
+            color: #FFFDF9;
+            background-color: var(--burgundy-deep);
+            background-image: url("images/hero.webp");
+            background-size: cover;
+            background-position: center 22%;
+        }
+
+        .card-back-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                180deg,
+                rgba(46, 12, 22, 0.15) 0%,
+                rgba(46, 12, 22, 0.12) 45%,
+                rgba(74, 16, 33, 0.78) 78%,
+                rgba(46, 12, 22, 0.94) 100%
+            );
+        }
+
+        .card-back-top-badge {
+            position: absolute;
+            top: 16px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            background: rgba(255, 252, 247, 0.9);
+            color: var(--burgundy);
+            border: 1px solid var(--gold);
+            padding: 4px 14px;
+            border-radius: 999px;
+            font-size: 0.55rem;
+            font-weight: 700;
+            letter-spacing: 0.24em;
+        }
+
+        .card-back-content {
+            position: relative;
+            z-index: 2;
+            padding: 22px 22px 20px;
+        }
+
+        .card-back-quote {
+            font-family: var(--font-serif);
+            font-style: italic;
+            font-size: 0.96rem;
+            line-height: 1.45;
+            color: #FFFDF9;
+            margin-bottom: 10px;
+        }
+
+        .card-back-names {
+            font-family: var(--font-serif);
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: var(--gold-light);
+            line-height: 1.05;
+            margin-bottom: 4px;
+        }
+
+        .card-back-names span {
+            font-family: var(--font-script);
+            color: #FFFDF9;
+            padding: 0 5px;
+        }
+
+        .card-back-date {
+            font-size: 0.62rem;
+            font-weight: 600;
+            letter-spacing: 0.28em;
+            color: rgba(255, 252, 247, 0.9);
+        }
+
+        /* =====================================================
+           PRINT MEDIA RULES (EXACT 5"x7" OR 2-UP A4)
+        ===================================================== */
+        @media print {
+            @page {
+                margin: 0.35in;
+            }
+
+            body {
+                background: #FFFFFF !important;
+                padding: 0 !important;
+                margin: 0 !important;
+            }
+
+            .print-toolbar {
+                display: none !important;
+            }
+
+            .print-stage {
+                gap: 0.25in !important;
+                justify-content: center !important;
+                align-items: center !important;
+            }
+
+            .invitation-card {
+                box-shadow: none !important;
+                page-break-inside: avoid;
+                break-inside: avoid;
+            }
+        }
+
+        @media (max-width: 560px) {
+            .invitation-card {
+                transform: scale(0.84);
+                transform-origin: top center;
+                margin-bottom: -0.9in;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- =====================================================
+         INTERACTIVE PRINT STUDIO TOOLBAR (SCREEN ONLY)
+    ===================================================== -->
+    <div class="print-toolbar">
+        <div class="toolbar-top">
+            <div class="toolbar-brand">
+                <h1>Thelma &amp; Guillaume (#TG2026) — Physical Invitation Card</h1>
+                <p>5" × 7" Luxury Arch Print Layout • Burgundy, Champagne Gold &amp; Sage Green • With Guest Name &amp; Seat Number</p>
+            </div>
+            <div class="toolbar-actions">
+                <a href="index.html" class="btn-back">← Back to Website</a>
+                <button type="button" class="btn-print" onclick="window.print()">
+                    🖨️ Print / Save as PDF
+                </button>
+            </div>
+        </div>
+
+        <div class="toolbar-controls">
+            <div class="control-field">
+                <label for="inputGuestName">Guest Name (Leave blank to handwrite)</label>
+                <input type="text" id="inputGuestName" placeholder="e.g. Mr. & Mrs. Ndoh (or leave blank)">
+            </div>
+
+            <div class="control-field">
+                <label for="inputSeatNumber">Seat / Table No. (Leave blank to handwrite)</label>
+                <input type="text" id="inputSeatNumber" placeholder="e.g. Table 04 / Seat 12">
+            </div>
+
+            <div class="control-field">
+                <label for="selectPrintLayout">Print Sheet Mode</label>
+                <select id="selectPrintLayout">
+                    <option value="front-back">Front + Back Portrait Card (Side by Side)</option>
+                    <option value="two-front">2-Up Front Cards on 1 Sheet (Best for Bulk Printing)</option>
+                    <option value="single-front">Single Front Card Only (5" × 7")</option>
+                </select>
+            </div>
+        </div>
+
+        <p class="toolbar-tip">
+            💡 <strong>Print Shop Tip:</strong> Leave the Guest Name and Seat Number fields empty to print blank master cards with dotted handwriting lines, or type a guest's name and seat number to print personalized VIP cards. Choose <strong>"Save as PDF"</strong> in the print dialog for a high-resolution vector PDF.
+        </p>
+    </div>
+
+    <!-- =====================================================
+         PRINT STAGE (CARDS)
+    ===================================================== -->
+    <div class="print-stage" id="printStage">
+
+        <!-- CARD 1: FRONT INVITATION CARD -->
+        <div class="invitation-card" id="cardFront1">
+            <div class="crop-mark crop-tl"></div>
+            <div class="crop-mark crop-tr"></div>
+            <div class="crop-mark crop-bl"></div>
+            <div class="crop-mark crop-br"></div>
+
+            <div class="card-outer-frame">
+                <!-- Sage & Gold Corner Botanical SVG Left -->
+                <svg class="corner-botanical botanical-tl" viewBox="0 0 100 100" fill="none">
+                    <path d="M8 92 C12 48, 45 14, 92 8" stroke="#C59B38" stroke-width="1.2" opacity="0.65" />
+                    <path d="M22 68 C16 54, 24 42, 36 46 C32 58, 26 64, 22 68 Z" fill="#7D947B" opacity="0.45" />
+                    <path d="M42 44 C38 30, 48 20, 60 26 C54 36, 48 42, 42 44 Z" fill="#7D947B" opacity="0.45" />
+                    <path d="M66 26 C64 14, 74 8, 84 14 C78 22, 72 24, 66 26 Z" fill="#C59B38" opacity="0.45" />
+                </svg>
+
+                <!-- Sage & Gold Corner Botanical SVG Right -->
+                <svg class="corner-botanical botanical-tr" viewBox="0 0 100 100" fill="none">
+                    <path d="M8 92 C12 48, 45 14, 92 8" stroke="#C59B38" stroke-width="1.2" opacity="0.65" />
+                    <path d="M22 68 C16 54, 24 42, 36 46 C32 58, 26 64, 22 68 Z" fill="#7D947B" opacity="0.45" />
+                    <path d="M42 44 C38 30, 48 20, 60 26 C54 36, 48 42, 42 44 Z" fill="#7D947B" opacity="0.45" />
+                    <path d="M66 26 C64 14, 74 8, 84 14 C78 22, 72 24, 66 26 Z" fill="#C59B38" opacity="0.45" />
+                </svg>
+
+                <div class="card-inner-arch">
+
+                    <!-- 1. Royal Monogram Crest -->
+                    <div class="card-crest">
+                        <div class="crest-circle">T <span>&amp;</span> G</div>
+                        <div class="crest-hashtag">#TG2026 • LIMBE</div>
+                    </div>
+
+                    <!-- 2. Families Invitation Line -->
+                    <p class="card-families">
+                        TOGETHER WITH THEIR FAMILIES, WE JOYFULLY INVITE YOU<br>
+                        TO THE WEDDING CELEBRATIONS OF
+                    </p>
+
+                    <!-- 3. Couple Names -->
+                    <div class="card-couple-names">
+                        <h2>Thelma <span class="amp">&amp;</span> Guillaume</h2>
+                    </div>
+
+                    <div class="gold-rule">
+                        <span></span><i>✦</i><span></span>
+                    </div>
+
+                    <!-- 4. Two-Day Schedule & Venues -->
+                    <div class="card-events-grid">
+                        <div class="card-event-box">
+                            <div class="card-event-day">FRIDAY, 27TH NOVEMBER 2026 • CULTURAL CELEBRATION</div>
+                            <div class="card-event-details">
+                                Traditional Rites at <span>4:00 PM Prompt</span>
+                            </div>
+                            <div class="card-event-sub">
+                                Venue: Family Residence, Mile 4 Promise Land, Limbe
+                            </div>
+                        </div>
+
+                        <div class="card-event-box">
+                            <div class="card-event-day">SATURDAY, 28TH NOVEMBER 2026 • CIVIL WEDDING &amp; RECEPTION</div>
+                            <div class="card-event-details">
+                                <span>10:00 AM</span> Civil Signing (Limbe 1 Council) &nbsp;•&nbsp; <span>12:00 PM</span> Blessings
+                            </div>
+                            <div class="card-event-details" style="margin-top: 2px;">
+                                <span>4:00 PM</span> Grand Reception — <strong>Ace Event Center, Mile 2 Limbe</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5. Wedding Colours Pill -->
+                    <div class="card-palette-row">
+                        <span class="swatch-dot swatch-b"></span>
+                        <span class="swatch-dot swatch-g"></span>
+                        <span class="swatch-dot swatch-s"></span>
+                        <span class="palette-text">Colours: Burgundy • Champagne Gold • Sage Green</span>
+                    </div>
+
+                    <!-- 6. Dedicated Guest Name & Seat Number Pass -->
+                    <div class="guest-pass-box">
+                        <div class="guest-name-area">
+                            <span class="pass-label">INVITED GUEST NAME(S)</span>
+                            <div class="guest-write-line">
+                                <span class="guest-prefix">M</span>
+                                <span class="js-guest-name"></span>
+                            </div>
+                        </div>
+                        <div class="seat-badge-area">
+                            <span class="pass-label">SEAT / TABLE NO.</span>
+                            <div class="seat-write-box">
+                                <span class="js-seat-number"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 7. RSVP & QR Code -->
+                    <div class="card-footer-row">
+                        <div class="rsvp-lines-info">
+                            <div class="rsvp-lines-label">RSVP VIA WHATSAPP OR CALL</div>
+                            <div class="rsvp-phones">+237 683 532 487 &nbsp;/&nbsp; +237 674 663 789</div>
+                            <div class="rsvp-quote-mini">“The lesson was love. The blessing was you.”</div>
+                        </div>
+
+                        <div class="qr-frame" title="Scan for Digital Invitation & Maps">
+                            <!-- Clean Vector QR Code Graphic -->
+                            <svg viewBox="0 0 36 36" fill="#6E1B33">
+                                <rect x="2" y="2" width="10" height="10" fill="none" stroke="#6E1B33" stroke-width="2" />
+                                <rect x="5" y="5" width="4" height="4" />
+                                <rect x="24" y="2" width="10" height="10" fill="none" stroke="#6E1B33" stroke-width="2" />
+                                <rect x="27" y="5" width="4" height="4" />
+                                <rect x="2" y="24" width="10" height="10" fill="none" stroke="#6E1B33" stroke-width="2" />
+                                <rect x="5" y="27" width="4" height="4" />
+                                <rect x="15" y="2" width="3" height="3" />
+                                <rect x="19" y="5" width="3" height="3" />
+                                <rect x="15" y="9" width="3" height="3" />
+                                <rect x="2" y="15" width="3" height="3" />
+                                <rect x="7" y="16" width="4" height="3" />
+                                <rect x="14" y="14" width="8" height="8" rx="1.5" fill="#C59B38" />
+                                <rect x="25" y="15" width="3" height="3" />
+                                <rect x="30" y="18" width="4" height="3" />
+                                <rect x="15" y="25" width="3" height="4" />
+                                <rect x="20" y="28" width="3" height="6" />
+                                <rect x="26" y="25" width="4" height="4" />
+                                <rect x="31" y="30" width="3" height="4" />
+                            </svg>
+                            <div class="qr-caption">
+                                #TG2026<br>INVITE
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 2: BACK PORTRAIT CARD (OR 2ND FRONT CARD IN 2-UP MODE) -->
+        <div class="invitation-card" id="cardBack">
+            <div class="crop-mark crop-tl"></div>
+            <div class="crop-mark crop-tr"></div>
+            <div class="crop-mark crop-bl"></div>
+            <div class="crop-mark crop-br"></div>
+
+            <div class="card-outer-frame">
+                <div class="card-back-inner">
+                    <div class="card-back-overlay"></div>
+                    <div class="card-back-top-badge">#TG2026 • SAVE OUR DATES</div>
+
+                    <div class="card-back-content">
+                        <p class="card-back-quote">
+                            “We went to Teacher Training College to prepare for our careers. Little did we know that life was preparing one of its most beautiful lessons for us. The lesson was love. The blessing was you. And the journey ahead is forever.”
+                        </p>
+                        <div class="gold-rule" style="margin: 8px auto;">
+                            <span></span><i>✦</i><span></span>
+                        </div>
+                        <h3 class="card-back-names">Thelma <span>&amp;</span> Guillaume</h3>
+                        <p class="card-back-date">27 — 28 NOVEMBER 2026 • LIMBE</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        (function () {
+            const nameInput = document.getElementById('inputGuestName');
+            const seatInput = document.getElementById('inputSeatNumber');
+            const layoutSelect = document.getElementById('selectPrintLayout');
+            const printStage = document.getElementById('printStage');
+            const cardFront1 = document.getElementById('cardFront1');
+            const cardBack = document.getElementById('cardBack');
+
+            // Keep a clone template of the front card for 2-Up mode
+            const backOriginalHTML = cardBack.innerHTML;
+
+            function syncPersonalization() {
+                const nameVal = nameInput.value.trim();
+                const seatVal = seatInput.value.trim();
+
+                document.querySelectorAll('.js-guest-name').forEach(el => {
+                    el.textContent = nameVal;
+                });
+
+                document.querySelectorAll('.js-seat-number').forEach(el => {
+                    el.textContent = seatVal;
+                });
+            }
+
+            function updateLayoutMode() {
+                const mode = layoutSelect.value;
+
+                if (mode === 'single-front') {
+                    cardBack.style.display = 'none';
+                } else if (mode === 'two-front') {
+                    cardBack.style.display = 'flex';
+                    cardBack.innerHTML = cardFront1.innerHTML;
+                    syncPersonalization();
+                } else {
+                    cardBack.style.display = 'flex';
+                    cardBack.innerHTML = backOriginalHTML;
+                }
+            }
+
+            nameInput.addEventListener('input', syncPersonalization);
+            seatInput.addEventListener('input', syncPersonalization);
+            layoutSelect.addEventListener('change', updateLayoutMode);
+        })();
+    </script>
+</body>
+
+</html>
