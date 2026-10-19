@@ -1907,27 +1907,6 @@ button {
     color: #F8EFE0;
 }
 
-.footer-print-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 9px 20px;
-    border-radius: 999px;
-    border: 1px solid rgba(232, 202, 120, 0.45);
-    background: rgba(255, 252, 247, 0.08);
-    color: var(--gold-champagne);
-    font-size: 0.7rem;
-    font-weight: 600;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    transition: all 0.25s ease;
-}
-
-.footer-print-link:hover {
-    background: var(--gold-champagne);
-    color: var(--burgundy-deep);
-}
-
 /* ============================================================
    FULLSCREEN PHOTO VIEWER
 ============================================================ */
