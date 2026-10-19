@@ -2,40 +2,35 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guillaume &amp; Thelma | 27 — 28 November 2026 • Limbe</title>
 
-    <title>Guillaume & Thelma | Wedding</title>
-
-    <!-- Wedding fonts -->
+    <!-- Editorial Wedding Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap"
         rel="stylesheet">
 
-    <!-- Our CSS -->
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
-
 </head>
-
 
 <body>
 
-    <audio id="weddingMusic" loop preload="none">
+    <!-- Background Wedding Song: Shane Filan - Beautiful In White -->
+    <audio id="weddingMusic" loop preload="auto">
         <source src="audio/wedding-song.mp3" type="audio/mpeg">
     </audio>
 
     <!-- =====================================
-     CINEMATIC OPENING SCREEN
-====================================== -->
-
+         CINEMATIC OPENING INVITATION GATE
+    ====================================== -->
     <div class="opening-screen">
-
+        <div class="opening-ornament opening-ornament-top"></div>
         <div class="opening-content">
+            <div class="opening-monogram">G <span>&amp;</span> T</div>
 
             <p class="opening-small">
                 TOGETHER WITH THEIR FAMILIES
@@ -43,30 +38,40 @@
 
             <h1 class="opening-names">
                 Guillaume
-                <span>&</span>
+                <span>&amp;</span>
                 Thelma
             </h1>
 
+            <div class="opening-divider">
+                <span></span>
+                <i>✦</i>
+                <span></span>
+            </div>
+
             <p class="opening-date">
-                27 — 28 NOVEMBER 2026
+                27 — 28 NOVEMBER 2026 • LIMBE
+            </p>
+
+            <p class="opening-palette-hint">
+                Burgundy • Champagne Gold • Sage Green
             </p>
 
             <button class="opening-button">
-                Open Invitation
+                <span>Open Invitation</span>
+                <i>♪</i>
             </button>
-
         </div>
-
+        <div class="opening-ornament opening-ornament-bottom"></div>
     </div>
 
-
-    <!-- HERO / OPENING SCREEN -->
-
+    <!-- =====================================
+         BRIGHT EDITORIAL HERO
+    ====================================== -->
     <section class="hero">
-
         <div class="hero-overlay"></div>
 
         <div class="hero-content">
+            <div class="hero-badge">LIMBE • CAMEROON</div>
 
             <p class="eyebrow">
                 WE ARE GETTING MARRIED
@@ -74,7 +79,7 @@
 
             <h1>
                 Guillaume
-                <span>&</span>
+                <span>&amp;</span>
                 Thelma
             </h1>
 
@@ -82,184 +87,274 @@
                 27 — 28 NOVEMBER 2026
             </p>
 
+            <p class="hero-quote">
+                “The lesson was love. The blessing was you. And the journey ahead is forever.”
+            </p>
+
             <button class="open-btn">
-                Open Invitation
+                Explore Our Story &amp; Details
             </button>
-
         </div>
-
-
-        <!-- Scroll indicator -->
 
         <div class="scroll-indicator">
-
             <span>Scroll</span>
-
             <div class="scroll-line"></div>
-
         </div>
-
     </section>
 
     <!-- =====================================
-     OUR STORY
-====================================== -->
-
-    <section class="story-section">
-
+         OUR LOVE STORY — THE DAY I MET MY FOREVER
+    ====================================== -->
+    <section class="story-section" id="story">
         <div class="story-container">
 
             <p class="section-label reveal">
-                OUR STORY
+                ❤️ OUR LOVE STORY
             </p>
 
-
-            <h2 class="story-title reveal-left">
-                Two hearts,<br>
-                one beautiful journey.
+            <h2 class="story-title reveal">
+                The Day I Met My Forever
             </h2>
 
-
-            <div class="story-image reveal-right">
-
-                <img src="images/story.webp" alt="Guillaume and Thelma">
-
-            </div>
-
-
-            <p class="story-text reveal">
-
-                With grateful hearts and great joy,
-                we invite you to celebrate the beginning
-                of a beautiful new chapter in our lives.
-
+            <p class="story-subtitle reveal">
+                The Story of Guillaume &amp; Thelma
             </p>
 
-        </div>
+            <!-- Featured Editorial Portraits -->
+            <div class="story-photo-duo reveal">
+                <div class="story-photo-card story-photo-main">
+                    <img src="images/story.webp" alt="Guillaume and Thelma">
+                </div>
+                <div class="story-photo-card story-photo-secondary">
+                    <img src="images/gallery-2.webp" alt="Guillaume and Thelma joyful moment" loading="lazy">
+                </div>
+            </div>
 
+            <!-- Highlighted Pull Quote -->
+            <blockquote class="story-pullquote reveal">
+                “We went to Teacher Training College to prepare for our careers. Little did we know that, somewhere between the lessons and the dreams, life was preparing one of its most beautiful lessons for us.”
+            </blockquote>
+
+            <!-- Editorial Letter Container -->
+            <div class="story-letter-card reveal">
+                <div class="story-chapter-tag">Chapter I • Where It All Began</div>
+
+                <p class="story-paragraph drop-cap">
+                    There are some people we meet in life, and there are some people life has been preparing us to meet. Sometimes, destiny doesn't announce itself with fireworks or loud promises. Sometimes, it walks quietly into our lives, wearing an ordinary face, on an ordinary day, in a place where we least expect to find the person who will one day mean the world to us.
+                </p>
+
+                <p class="story-paragraph story-highlight-line">
+                    For me, that place was our Teacher Training College.
+                </p>
+
+                <p class="story-paragraph">
+                    I went there with dreams in my heart, books in my hands, and a future I was trying to build. Like every other student, I was thinking about my education, my career, and the kind of man I wanted to become. I had no idea that somewhere within those classroom walls, among the noise of students, the pressure of assignments, and the struggles of student life, I would meet a woman who would eventually become one of the most beautiful chapters of my life.
+                </p>
+
+                <p class="story-paragraph story-highlight-line">
+                    Her name was Thelma.
+                </p>
+
+                <p class="story-paragraph">
+                    I cannot say that the moment I first saw her, the heavens opened or time stood still. But looking back today, I realize that some moments become special only after life reveals their meaning. What seemed like an ordinary encounter was, perhaps, the beginning of a story God was quietly writing for us.
+                </p>
+
+                <p class="story-paragraph">
+                    At first, she was simply a girl I knew from college. Someone whose presence would gradually become familiar, whose smile would become memorable, and whose existence would slowly find a place in my thoughts. Neither of us could have imagined how far that simple connection would take us.
+                </p>
+
+                <p class="story-paragraph">
+                    We were young, learning about life while preparing to teach others. We were surrounded by lessons, but little did we know that life itself was preparing us for one of its greatest lessons: <strong>love</strong>.
+                </p>
+
+                <!-- Expandable Continuation for Seamless Mobile & Desktop Reading -->
+                <div class="story-expandable" id="storyExpandable">
+                    <div class="story-chapter-divider">
+                        <span></span><i>✦</i><span></span>
+                    </div>
+                    <div class="story-chapter-tag">Chapter II • Growing Through the Seasons</div>
+
+                    <p class="story-paragraph">
+                        And love, as I would later discover, is not always about grand gestures or beautiful words. Sometimes, it begins with the smallest things—a conversation that lasts longer than expected, a smile that stays in your memory, a feeling you cannot quite explain, or the quiet happiness of seeing someone without having a particular reason to be happy.
+                    </p>
+
+                    <p class="story-paragraph">
+                        Somewhere along the way, Thelma stopped being just another person in my world. She became someone whose presence mattered. Someone I wanted to understand. Someone whose happiness began to mean something to me. And without even realizing when it happened, my heart began making room for her.
+                    </p>
+
+                    <p class="story-paragraph">
+                        Life did not promise us that everything would be easy. Growing up comes with its own struggles, responsibilities, disappointments, and unexpected turns. We had our own journeys to travel, our own dreams to pursue, and our own lessons to learn. But somehow, our story continued to hold a place for both of us.
+                    </p>
+
+                    <p class="story-paragraph">
+                        Years passed, and life took us through different seasons. We grew, changed, learned, and experienced the realities that come with becoming adults. We discovered that love is not merely the excitement of the beginning; it is also the patience required in difficult moments, the forgiveness needed after misunderstandings, and the courage to keep believing in something beautiful even when the journey is not perfect.
+                    </p>
+
+                    <p class="story-paragraph story-highlight-line">
+                        And perhaps that is what makes our story so special to me.
+                    </p>
+
+                    <p class="story-paragraph">
+                        We did not simply meet at college. We met at a time when neither of us knew the full story that life had in store for us.
+                    </p>
+
+                    <p class="story-paragraph">
+                        Today, when I look at Thelma, I see more than the girl I met at Teacher Training College. I see a woman with whom I am preparing to build a home, share my dreams, raise a family, and face the uncertainties of tomorrow. I see someone whose name has travelled with me through different chapters of life and has now found its way into my plans for forever.
+                    </p>
+
+                    <p class="story-paragraph">
+                        It touches me to think that the same place where we once worried about classes, examinations, and our future careers would become part of the foundation of our love story.
+                    </p>
+
+                    <p class="story-paragraph">
+                        Back then, we were preparing to become teachers. We were learning how to guide others, how to be patient, and how to prepare for the future. Yet life was quietly teaching us something far more personal: that some encounters are worth remembering, some connections are worth nurturing, and some people become so deeply woven into our lives that imagining the future without them no longer feels the same.
+                    </p>
+
+                    <div class="story-chapter-divider">
+                        <span></span><i>✦</i><span></span>
+                    </div>
+                    <div class="story-chapter-tag">Chapter III • Choosing Forever</div>
+
+                    <p class="story-paragraph story-highlight-line">
+                        And now, here we are.
+                    </p>
+
+                    <p class="story-paragraph">
+                        From college classmates to two people preparing to stand before our families and make a lifelong commitment. From the uncertainty of youth to the beautiful seriousness of choosing each other. From a meeting whose significance we could not fully understand to a wedding that will give our journey a new beginning.
+                    </p>
+
+                    <p class="story-paragraph">
+                        As I prepare to marry Thelma, I find myself looking back with gratitude. Not because our story has been perfect, but because it is ours. It carries the memories of where we started, the lessons of the years behind us, and the hope of everything still waiting ahead.
+                    </p>
+
+                    <p class="story-paragraph">
+                        If someone had told me back then that the girl I met at Teacher Training College would one day be the woman I would proudly call my wife, I might have smiled without understanding just how precious that future would become.
+                    </p>
+
+                    <p class="story-paragraph story-highlight-line">
+                        But today, I understand.
+                    </p>
+
+                    <p class="story-paragraph">
+                        Sometimes, the greatest love stories do not begin with a promise of forever. They begin with two people simply crossing paths, unaware that one day they will look back and realize that the ordinary day they met was anything but ordinary.
+                    </p>
+
+                    <p class="story-paragraph">
+                        Thelma, you were part of my story before I fully understood the story we were writing together.
+                    </p>
+
+                    <p class="story-paragraph">
+                        And as we prepare to begin this next chapter, there is one thing I want you to know: among all the things life has taught me, one of the most beautiful is that meeting you was not just a moment in my past. It became a part of the future I now look forward to with all my heart.
+                    </p>
+
+                    <p class="story-paragraph">
+                        We went to Teacher Training College to prepare for our careers. Little did we know that, somewhere between the lessons and the dreams, life was preparing one of its most beautiful lessons for us.
+                    </p>
+
+                    <p class="story-climax">
+                        The lesson was love. The blessing was you. And the journey ahead is forever.
+                    </p>
+
+                    <div class="story-signature">
+                        <span>Forever yours,</span>
+                        <strong>Guillaume ❤️ Thelma</strong>
+                    </div>
+                </div>
+
+                <button type="button" class="story-toggle-btn" id="storyToggleBtn" aria-expanded="false">
+                    <span>Continue Reading Full Story</span> <i class="toggle-arrow">↓</i>
+                </button>
+            </div>
+
+        </div>
     </section>
 
     <!-- =====================================
-     WEDDING TIMELINE
-====================================== -->
-
+         WEDDING TIMELINE (2-DAY OVERVIEW)
+    ====================================== -->
     <section class="timeline-section" id="schedule">
-
         <div class="timeline-container">
 
-            <!-- Section heading -->
-
             <div class="timeline-heading">
-
                 <p class="section-label reveal">
                     THE CELEBRATION
                 </p>
 
                 <h2 class="timeline-title reveal">
-                    Two beautiful days.
+                    Two Joyful Days in Limbe
                 </h2>
 
                 <p class="timeline-intro reveal">
-                    Two celebrations, one unforgettable
-                    beginning.
+                    Join us as we honor our heritage, exchange our vows, and celebrate our union.
                 </p>
-
             </div>
 
-
-            <!-- Timeline -->
-
             <div class="timeline">
-
-
-                <!-- Timeline line -->
-
                 <div class="timeline-line">
-
                     <div class="timeline-progress"></div>
-
                 </div>
 
-
-                 <!-- =================================
-                 EVENT 01
-            ================================== -->
-
+                <!-- EVENT 01: CULTURAL CELEBRATION -->
                 <div class="timeline-event timeline-left reveal-left">
-
                     <div class="timeline-dot"></div>
-
                     <div class="event-card">
-
-                        <span class="event-number">
-                            01
-                        </span>
-
-                        <p class="event-type">
-                            CULTURAL RITES
-                        </p>
-
-                        <h3>
-                            Our Cultural Celebration
-                        </h3>
-
-                        <p class="event-date">
-                            27 November 2026
-                        </p>
-
-                        <p class="event-location">
-                            Limbe
-                        </p>
-
+                        <span class="event-number">01</span>
+                        <span class="event-day-pill">FRIDAY • 27 NOV 2026</span>
+                        <p class="event-type">CULTURAL CELEBRATION</p>
+                        <h3>Traditional Rites</h3>
+                        <p class="event-date">4:00 PM Prompt</p>
+                        <p class="event-location">Family Residence • Mile 4 Promise Land, Limbe</p>
                     </div>
-
                 </div>
 
-
-                <!-- =================================
-                 EVENT 02
-            ================================== -->
-
+                <!-- EVENT 02: CIVIL SIGNING -->
                 <div class="timeline-event timeline-right reveal-right">
-
                     <div class="timeline-dot"></div>
-
                     <div class="event-card">
-
-                        <span class="event-number">
-                            02
-                        </span>
-
-                        <p class="event-type">
-                            CIVIL WEDDING & RECEPTION
-                        </p>
-
-                        <h3>
-                            A New Beginning & Celebration
-                        </h3>
-
-                        <p class="event-date">
-                            28 November 2026
-                        </p>
-
-                        <p class="event-location">
-                            Limbe
-                        </p>
-
+                        <span class="event-number">02</span>
+                        <span class="event-day-pill">SATURDAY • 28 NOV 2026</span>
+                        <p class="event-type">CIVIL SIGNING</p>
+                        <h3>Civil Marriage Vows</h3>
+                        <p class="event-date">10:00 AM</p>
+                        <p class="event-location">Limbe 1 Council</p>
                     </div>
-
                 </div>
 
+                <!-- EVENT 03: BLESSINGS -->
+                <div class="timeline-event timeline-left reveal-left">
+                    <div class="timeline-dot"></div>
+                    <div class="event-card">
+                        <span class="event-number">03</span>
+                        <span class="event-day-pill">SATURDAY • 28 NOV 2026</span>
+                        <p class="event-type">NUPTIAL BLESSINGS</p>
+                        <h3>Solemn Matrimonial Blessing</h3>
+                        <p class="event-date">12:00 PM</p>
+                        <p class="event-location">Limbe</p>
+                    </div>
+                </div>
+
+                <!-- EVENT 04: RECEPTION -->
+                <div class="timeline-event timeline-right reveal-right">
+                    <div class="timeline-dot"></div>
+                    <div class="event-card">
+                        <span class="event-number">04</span>
+                        <span class="event-day-pill">SATURDAY • 28 NOV 2026</span>
+                        <p class="event-type">GRAND RECEPTION</p>
+                        <h3>Evening Banquet &amp; Dance</h3>
+                        <p class="event-date">4:00 PM</p>
+                        <p class="event-location">Ace Event Center • Mile 2, Limbe</p>
+                    </div>
+                </div>
             </div>
 
         </div>
-
     </section>
 
+    <!-- =====================================
+         COUNTDOWN SECTION
+    ====================================== -->
     <section class="countdown-section">
-
         <div class="countdown-container">
-
             <p class="section-label reveal">
                 COUNTING DOWN TO FOREVER
             </p>
@@ -270,11 +365,10 @@
             </h2>
 
             <p class="countdown-date reveal">
-                27 NOVEMBER 2026
+                27 — 28 NOVEMBER 2026 • LIMBE
             </p>
 
             <div class="countdown reveal" aria-live="polite">
-
                 <div class="countdown-box">
                     <span id="days">00</span>
                     <small>DAYS</small>
@@ -294,261 +388,190 @@
                     <span id="seconds">00</span>
                     <small>SECONDS</small>
                 </div>
-
             </div>
 
             <p class="countdown-message reveal">
-                Until we begin our forever.
+                Until we begin our forever in Limbe.
             </p>
-
         </div>
-
     </section>
 
+    <!-- =====================================
+         DETAILED VENUE & SCHEDULE CARDS
+    ====================================== -->
     <section class="details-section" id="locations">
-
         <div class="details-container">
 
             <div class="details-heading">
-
                 <p class="section-label reveal">
-                    JOIN US
+                    VENUES &amp; ITINERARY
                 </p>
 
                 <h2 class="details-title reveal">
-                    Two days.<br>
-                    Two celebrations.
+                    Where &amp; When<br>
+                    to Celebrate With Us
                 </h2>
 
                 <p class="details-intro reveal">
-                    We would be honoured to have you with us
-                    as we begin this beautiful chapter together.
+                    We would be deeply honoured by your presence across both days of our wedding celebrations in Limbe.
                 </p>
-
             </div>
 
-
-            <!-- CULTURAL RITES -->
-
+            <!-- DAY 1: CULTURAL CELEBRATION -->
             <div class="event-detail-card reveal-left">
-
                 <div class="event-detail-top">
-
-                    <span class="detail-number">
-                        01
-                    </span>
-
-                    <span class="detail-label">
-                        CULTURAL RITES
-                    </span>
-
+                    <span class="detail-number">DAY 01</span>
+                    <span class="detail-label">FRIDAY • 27 NOVEMBER 2026</span>
                 </div>
 
-
                 <div class="event-detail-content">
-
-                    <h3>
-                        Our Cultural Celebration
-                    </h3>
+                    <h3>Cultural Celebration</h3>
 
                     <div class="detail-info">
-
                         <div class="detail-row">
-
-                            <span class="detail-icon">
-                                DATE
-                            </span>
-
+                            <span class="detail-icon">DATE</span>
                             <div>
-                                <strong>
-                                    27 November 2026
-                                </strong>
-
-                                <p>
-                                    Friday
-                                </p>
+                                <strong>Friday, 27th November 2026</strong>
+                                <p>Traditional &amp; Cultural Rites</p>
                             </div>
-
                         </div>
 
-
                         <div class="detail-row">
-
-                            <span class="detail-icon">
-                                PLACE
-                            </span>
-
+                            <span class="detail-icon">TIME</span>
                             <div>
-                                <strong>
-                                    Limbe
-                                </strong>
-
-                                <p>
-                                    Traditional Celebration
-                                </p>
+                                <strong>4:00 PM Prompt</strong>
+                                <p>Kindly be seated by 3:45 PM</p>
                             </div>
-
                         </div>
 
-
                         <div class="detail-row">
-
-                            <span class="detail-icon">
-                                TIME
-                            </span>
-
+                            <span class="detail-icon">VENUE</span>
                             <div>
-                                <strong>
-                                    Cultural Rites
-                                </strong>
-
-                                <p>
-                                    Please arrive early
-                                </p>
+                                <strong>Family Residence</strong>
+                                <p>Mile 4 Promise Land, Limbe</p>
                             </div>
-
                         </div>
-
                     </div>
 
-
-                    <a href="https://maps.google.com/?q=Limbe,+Cameroon" class="location-button" target="_blank"
-                        rel="noopener noreferrer">
-                        VIEW LOCATION
-                        <span>↗</span>
-                    </a>
+                    <div class="card-action-row">
+                        <a href="https://maps.google.com/?q=Mile+4+Limbe,+Cameroon" class="location-button" target="_blank"
+                            rel="noopener noreferrer">
+                            DIRECTIONS (MILE 4)
+                            <span>↗</span>
+                        </a>
+                    </div>
 
                     <div class="calendar-actions">
                         <button type="button" class="cal-btn" onclick="openGoogleCalendar('cultural-rites')">
-                            📅 Google Calendar
+                            📅 Add to Google Calendar
                         </button>
                         <button type="button" class="cal-btn" onclick="downloadIcsCalendar('cultural-rites')">
                             📥 Apple / Outlook (.ics)
                         </button>
                     </div>
-
                 </div>
-
             </div>
 
-
-            <!-- CIVIL WEDDING & RECEPTION -->
-
+            <!-- DAY 2: CIVIL WEDDING, BLESSINGS & RECEPTION -->
             <div class="event-detail-card reveal-right">
-
                 <div class="event-detail-top">
-
-                    <span class="detail-number">
-                        02
-                    </span>
-
-                    <span class="detail-label">
-                        CIVIL WEDDING & RECEPTION
-                    </span>
-
+                    <span class="detail-number">DAY 02</span>
+                    <span class="detail-label">SATURDAY • 28 NOVEMBER 2026</span>
                 </div>
 
-
                 <div class="event-detail-content">
-
-                    <h3>
-                        A New Beginning & Reception
-                    </h3>
+                    <h3>Civil Wedding, Blessings &amp; Reception</h3>
 
                     <div class="detail-info">
-
                         <div class="detail-row">
-
-                            <span class="detail-icon">
-                                DATE
-                            </span>
-
+                            <span class="detail-icon">10:00 AM</span>
                             <div>
-                                <strong>
-                                    28 November 2026
-                                </strong>
-
-                                <p>
-                                    Saturday
-                                </p>
+                                <strong>Civil Signing</strong>
+                                <p>Limbe 1 Council</p>
                             </div>
-
                         </div>
 
-
                         <div class="detail-row">
-
-                            <span class="detail-icon">
-                                PLACE
-                            </span>
-
+                            <span class="detail-icon">12:00 PM</span>
                             <div>
-                                <strong>
-                                    Limbe
-                                </strong>
-
-                                <p>
-                                    Civil Ceremony & Reception
-                                </p>
+                                <strong>Nuptial Blessings</strong>
+                                <p>Solemn Blessing Ceremony</p>
                             </div>
-
                         </div>
 
-
                         <div class="detail-row">
-
-                            <span class="detail-icon">
-                                TIME
-                            </span>
-
+                            <span class="detail-icon">4:00 PM</span>
                             <div>
-                                <strong>
-                                    Celebration
-                                </strong>
-
-                                <p>
-                                    Ceremony followed by Reception
-                                </p>
+                                <strong>Grand Reception</strong>
+                                <p>Ace Event Center, Mile 2 Limbe</p>
                             </div>
-
                         </div>
-
                     </div>
 
-
-                    <a href="https://maps.google.com/?q=Limbe,+Cameroon" class="location-button" target="_blank"
-                        rel="noopener noreferrer">
-                        VIEW LOCATION
-                        <span>↗</span>
-                    </a>
+                    <div class="card-action-row">
+                        <a href="https://maps.google.com/?q=Limbe+1+Council,+Limbe,+Cameroon" class="location-button" target="_blank"
+                            rel="noopener noreferrer">
+                            LIMBE 1 COUNCIL MAP
+                            <span>↗</span>
+                        </a>
+                        <a href="https://maps.google.com/?q=Ace+Event+Center+Mile+2+Limbe,+Cameroon" class="location-button location-button-secondary" target="_blank"
+                            rel="noopener noreferrer">
+                            ACE EVENT CENTER MAP
+                            <span>↗</span>
+                        </a>
+                    </div>
 
                     <div class="calendar-actions">
                         <button type="button" class="cal-btn" onclick="openGoogleCalendar('civil-wedding')">
-                            📅 Google Calendar
+                            📅 Add to Google Calendar
                         </button>
                         <button type="button" class="cal-btn" onclick="downloadIcsCalendar('civil-wedding')">
                             📥 Apple / Outlook (.ics)
                         </button>
                     </div>
-
                 </div>
-
             </div>
 
         </div>
-
     </section>
 
-    <!-- =========================
-     PHOTO GALLERY
-========================= -->
+    <!-- =====================================
+         DRESS CODE & WEDDING COLOURS
+    ====================================== -->
+    <section class="dresscode-section" id="dresscode">
+        <div class="dresscode-container">
+            <p class="section-label reveal">OUR WEDDING PALETTE</p>
+            <h2 class="dresscode-title reveal">Colours of Our Celebration</h2>
+            <p class="dresscode-note reveal">
+                We invite our beloved family and friends to celebrate with us in our chosen wedding colours:
+            </p>
+            <div class="swatch-grid reveal">
+                <div class="swatch-card">
+                    <div class="swatch-circle" style="background: linear-gradient(135deg, #801830, #581020);"></div>
+                    <span class="swatch-name">Burgundy</span>
+                    <small class="swatch-sub">Deep Romance</small>
+                </div>
+                <div class="swatch-card">
+                    <div class="swatch-circle" style="background: linear-gradient(135deg, #E8CA78, #C49B38);"></div>
+                    <span class="swatch-name">Champagne Gold</span>
+                    <small class="swatch-sub">Radiant Joy</small>
+                </div>
+                <div class="swatch-card">
+                    <div class="swatch-circle" style="background: linear-gradient(135deg, #9CAF98, #738870);"></div>
+                    <span class="swatch-name">Sage Green</span>
+                    <small class="swatch-sub">Grace &amp; Peace</small>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- =====================================
+         PHOTO GALLERY
+    ====================================== -->
     <section class="gallery-section" id="gallery">
-
         <div class="gallery-container">
 
             <div class="gallery-heading">
-
                 <p class="section-label reveal">
                     OUR MOMENTS
                 </p>
@@ -559,155 +582,74 @@
                 </h2>
 
                 <p class="gallery-intro reveal">
-                    A few memories from our journey
-                    together.
+                    Tap any portrait to view in fullscreen.
                 </p>
-
             </div>
-
 
             <div class="gallery">
-
                 <!-- PHOTO 1 -->
-
                 <div class="gallery-item gallery-large reveal">
-
                     <div class="gallery-image">
-
                         <img src="images/gallery-1.webp" alt="Guillaume and Thelma" loading="lazy">
-
                     </div>
-
                 </div>
-
 
                 <!-- PHOTO 2 -->
-
                 <div class="gallery-item gallery-small reveal-left">
-
                     <div class="gallery-image">
-
                         <img src="images/gallery-2.webp" alt="Guillaume and Thelma" loading="lazy">
-
                     </div>
-
                 </div>
-
 
                 <!-- PHOTO 3 -->
-
                 <div class="gallery-item gallery-medium reveal-right">
-
                     <div class="gallery-image">
-
                         <img src="images/gallery-3.webp" alt="Guillaume and Thelma" loading="lazy">
-
                     </div>
-
                 </div>
-
 
                 <!-- PHOTO 4 -->
-
                 <div class="gallery-item gallery-wide reveal">
-
                     <div class="gallery-image">
-
                         <img src="images/gallery-4.webp" alt="Guillaume and Thelma" loading="lazy">
-
                     </div>
-
                 </div>
-
 
                 <!-- PHOTO 5 -->
-
                 <div class="gallery-item gallery-medium reveal-left">
-
                     <div class="gallery-image">
-
                         <img src="images/gallery-5.webp" alt="Guillaume and Thelma" loading="lazy">
-
                     </div>
-
                 </div>
-
 
                 <!-- PHOTO 6 -->
-
                 <div class="gallery-item gallery-small reveal-right">
-
                     <div class="gallery-image">
-
                         <img src="images/gallery-6.webp" alt="Guillaume and Thelma" loading="lazy">
-
                     </div>
-
                 </div>
-
 
                 <!-- PHOTO 7 -->
-
                 <div class="gallery-item gallery-medium reveal-left">
-
                     <div class="gallery-image">
-
                         <img src="images/gallery-7.webp" alt="Guillaume and Thelma" loading="lazy">
-
                     </div>
-
                 </div>
-
 
                 <!-- PHOTO 8 -->
-
                 <div class="gallery-item gallery-wide reveal">
-
                     <div class="gallery-image">
-
                         <img src="images/save-the-date.webp" alt="Guillaume and Thelma - Save The Date" loading="lazy">
-
                     </div>
-
                 </div>
-
             </div>
 
         </div>
-
     </section>
 
-    <!-- =========================
-     DRESS CODE & PALETTE
-========================= -->
-    <section class="dresscode-section" id="dresscode">
-        <div class="dresscode-container">
-            <p class="section-label reveal">DRESS CODE & PALETTE</p>
-            <h2 class="dresscode-title reveal">Celebrate in Elegance</h2>
-            <p class="dresscode-note reveal">
-                Formal / Traditional attire. We invite you to share our joy and style by incorporating our wedding tones:
-            </p>
-            <div class="swatch-grid reveal">
-                <div class="swatch-card">
-                    <div class="swatch-circle" style="background-color: #11100F;"></div>
-                    <span class="swatch-name">Onyx Black</span>
-                </div>
-                <div class="swatch-card">
-                    <div class="swatch-circle" style="background-color: #D4AF37;"></div>
-                    <span class="swatch-name">Champagne Gold</span>
-                </div>
-                <div class="swatch-card">
-                    <div class="swatch-circle" style="background-color: #F5F0E6;"></div>
-                    <span class="swatch-name">Warm Ivory</span>
-                </div>
-                <div class="swatch-card">
-                    <div class="swatch-circle" style="background-color: #6E1B3B;"></div>
-                    <span class="swatch-name">Royal Burgundy</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    <!-- =====================================
+         GIFT NOTE
+    ====================================== -->
     <section class="gift-section">
         <div class="gift-container">
 
@@ -727,19 +669,19 @@
             </div>
 
             <p class="gift-text reveal">
-                Having you celebrate this beautiful moment
-                with us means more than we could ever express.
+                Having you celebrate this sacred moment
+                with us in Limbe means more than words could ever express.
             </p>
 
             <p class="gift-text reveal">
                 If you would like to bless us with a gift,
-                cash will do it beautifully and will make us smile broader
-                as we begin this new chapter of our lives together.
+                a monetary blessing will be deeply appreciated
+                as we build our home and begin this new chapter together.
             </p>
 
             <p class="gift-thank-you reveal">
-                Thank you for your love, your generosity,
-                and most importantly, for being part of our journey.
+                Thank you for your prayers, your generosity,
+                and for being part of our forever.
             </p>
 
             <div class="gift-symbol reveal">
@@ -747,15 +689,17 @@
             </div>
 
         </div>
-
     </section>
 
+    <!-- =====================================
+         WHATSAPP RSVP SECTION
+    ====================================== -->
     <section class="rsvp-section" id="rsvp">
         <div class="rsvp-container">
 
             <div class="rsvp-heading">
                 <p class="section-label reveal">
-                    RSVP
+                    RSVP VIA WHATSAPP
                 </p>
 
                 <h2 class="rsvp-title reveal">
@@ -764,8 +708,8 @@
                 </h2>
 
                 <p class="rsvp-intro reveal">
-                    Your presence would make our celebration
-                    even more special. Confirm directly with the couple via WhatsApp.
+                    Kindly confirm your attendance below. Your response will be sent directly to our wedding RSVP lines on WhatsApp:
+                    <br><strong>+237 683 532 487</strong> &nbsp;•&nbsp; <strong>+237 674 663 789</strong>
                 </p>
             </div>
 
@@ -773,41 +717,40 @@
 
                 <div class="form-group">
                     <label for="guestName">
-                        YOUR NAME
+                        YOUR FULL NAME
                     </label>
-
-                    <input type="text" id="guestName" name="guestName" placeholder="Enter your name" required>
+                    <input type="text" id="guestName" name="guestName" placeholder="Enter your full name" required>
                 </div>
 
                 <div class="form-group">
                     <label>
-                        WHICH CELEBRATION WILL YOU ATTEND?
+                        WHICH CELEBRATIONS WILL YOU ATTEND?
                     </label>
 
                     <div class="event-options">
-
                         <label class="event-option">
-                            <input type="checkbox" name="event" value="cultural">
-
+                            <input type="checkbox" name="event" value="Cultural Rites (Fri 27 Nov)" checked>
                             <span>
-                                CULTURAL RITES
-                                <small>
-                                    27 NOV • LIMBE
-                                </small>
+                                <strong class="event-opt-title">CULTURAL CELEBRATION</strong>
+                                <small>FRI 27 NOV • 4:00 PM • MILE 4 PROMISE LAND</small>
                             </span>
                         </label>
 
                         <label class="event-option">
-                            <input type="checkbox" name="event" value="civil">
-
+                            <input type="checkbox" name="event" value="Civil Signing & Blessings (Sat 28 Nov)" checked>
                             <span>
-                                CIVIL WEDDING & RECEPTION
-                                <small>
-                                    28 NOV • LIMBE
-                                </small>
+                                <strong class="event-opt-title">CIVIL SIGNING &amp; BLESSINGS</strong>
+                                <small>SAT 28 NOV • 10:00 AM &amp; 12:00 PM • LIMBE 1 COUNCIL</small>
                             </span>
                         </label>
 
+                        <label class="event-option">
+                            <input type="checkbox" name="event" value="Grand Reception (Sat 28 Nov)" checked>
+                            <span>
+                                <strong class="event-opt-title">GRAND RECEPTION</strong>
+                                <small>SAT 28 NOV • 4:00 PM • ACE EVENT CENTER MILE 2</small>
+                            </span>
+                        </label>
                     </div>
                 </div>
 
@@ -817,21 +760,15 @@
                     </label>
 
                     <div class="attendance-options">
-
                         <label class="attendance-option">
-                            <input type="radio" name="attendance" value="yes" required>
-                            <span>
-                                Joyfully accepts
-                            </span>
+                            <input type="radio" name="attendance" value="yes" checked required>
+                            <span>Joyfully Accepts 🥂</span>
                         </label>
 
                         <label class="attendance-option">
                             <input type="radio" name="attendance" value="no">
-                            <span>
-                                Regretfully declines
-                            </span>
+                            <span>Regretfully Declines 🤍</span>
                         </label>
-
                     </div>
                 </div>
 
@@ -841,79 +778,67 @@
                     </label>
 
                     <select id="guestCount" name="guestCount" required>
-                        <option value="">
-                            Select number of guests
-                        </option>
-
-                        <option value="1">
-                            1 Guest
-                        </option>
-
-                        <option value="2">
-                            2 Guests
-                        </option>
-
-                        <option value="3">
-                            3 Guests
-                        </option>
-
-                        <option value="4">
-                            4 Guests
-                        </option>
-
-                        <option value="5">
-                            5 Guests
-                        </option>
+                        <option value="1">1 Guest</option>
+                        <option value="2">2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="5">5 Guests</option>
                     </select>
                 </div>
 
                 <div class="form-group">
-                    <label for="guestMessage">
-                        A MESSAGE FOR THE COUPLE
-                        <span>(OPTIONAL)</span>
+                    <label>
+                        SELECT WHATSAPP RSVP LINE
                     </label>
 
-                    <textarea id="guestMessage" name="guestMessage" rows="4"
-                        placeholder="Leave us a little message..."></textarea>
+                    <div class="attendance-options">
+                        <label class="attendance-option">
+                            <input type="radio" name="rsvpRecipient" value="237683532487" checked>
+                            <span>Line 1 (+237 683 532 487)</span>
+                        </label>
+
+                        <label class="attendance-option">
+                            <input type="radio" name="rsvpRecipient" value="237674663789">
+                            <span>Line 2 (+237 674 663 789)</span>
+                        </label>
+                    </div>
                 </div>
 
-                <button type="submit" class="rsvp-button" style="background: #25D366; border-color: #25D366; color: #ffffff;">
-                    CONFIRM VIA WHATSAPP
-                    <span style="font-size: 14px;">💬</span>
+                <div class="form-group">
+                    <label for="guestMessage">
+                        BLESSINGS OR NOTE FOR GUILLAUME &amp; THELMA <span>(OPTIONAL)</span>
+                    </label>
+                    <textarea id="guestMessage" name="guestMessage" rows="3"
+                        placeholder="Write a wish, prayer, or note for the couple..."></textarea>
+                </div>
+
+                <button type="submit" class="rsvp-button">
+                    SEND RSVP ON WHATSAPP
+                    <span>💬</span>
                 </button>
 
             </form>
 
-            <div class="rsvp-success" id="rsvpSuccess">
-                <div class="success-mark">✓</div>
-
-                <h3>Thank You</h3>
-
-                <p>
-                    We are so happy to have you
-                    celebrating this beautiful moment
-                    with us.
-                </p>
-            </div>
+            <div class="rsvp-success" id="rsvpSuccess"></div>
 
         </div>
     </section>
 
+    <!-- =====================================
+         CLOSING SECTION
+    ====================================== -->
     <section class="closing-section">
-
         <div class="closing-image"></div>
-
         <div class="closing-overlay"></div>
 
         <div class="closing-content">
-
             <p class="section-label reveal">
-                WITH LOVE
+                FOREVER YOURS
             </p>
 
             <h2 class="closing-title reveal">
-                Thank you for being<br>
-                part of our story.
+                The lesson was love.<br>
+                The blessing was you.
             </h2>
 
             <div class="closing-divider reveal">
@@ -923,45 +848,40 @@
             </div>
 
             <h3 class="closing-names reveal">
-                Guillaume <span>&</span> Thelma
+                Guillaume <span>&amp;</span> Thelma
             </h3>
 
             <p class="closing-date reveal">
-                27 — 28 NOVEMBER 2026
+                27 — 28 NOVEMBER 2026 • LIMBE
             </p>
-
         </div>
-
     </section>
 
+    <!-- =====================================
+         SITE FOOTER
+    ====================================== -->
     <footer class="site-footer">
-
         <div class="footer-content">
-
             <p class="footer-names">
-                Guillaume & Thelma
+                Guillaume &amp; Thelma
             </p>
 
             <p class="footer-text">
-                OUR BEGINNING. OUR FOREVER.
+                27–28 NOVEMBER 2026 • LIMBE, CAMEROON
             </p>
 
             <div class="footer-divider"></div>
 
             <p class="footer-copy">
-                With love, always.
+                And the journey ahead is forever. ❤️
             </p>
-
         </div>
-
     </footer>
 
-    <!-- =========================
-     FULLSCREEN PHOTO VIEWER
-========================= -->
-
+    <!-- =====================================
+         FULLSCREEN PHOTO VIEWER
+    ====================================== -->
     <div class="photo-viewer" id="photoViewer">
-
         <button class="viewer-close" id="viewerClose" aria-label="Close photo viewer">
             ×
         </button>
@@ -971,9 +891,7 @@
         </button>
 
         <div class="viewer-image-container">
-
             <img id="viewerImage" src="" alt="Wedding photo">
-
         </div>
 
         <button class="viewer-next" id="viewerNext" aria-label="Next photo">
@@ -983,23 +901,14 @@
         <div class="viewer-counter" id="viewerCounter">
             01 / 08
         </div>
-
     </div>
 
-    <!-- =========================
-     MUSIC CONTROL
-========================= -->
-
+    <!-- =====================================
+         FLOATING CONTROLS
+    ====================================== -->
     <button class="music-control" id="musicControl" aria-label="Play wedding music">
-
-        <span class="music-icon">
-            ♪
-        </span>
-
-        <span class="music-text">
-            MUSIC
-        </span>
-
+        <span class="music-icon">♪</span>
+        <span class="music-text">BEAUTIFUL IN WHITE</span>
     </button>
 
     <button class="back-to-top" id="backToTop" aria-label="Back to top">
@@ -1007,7 +916,6 @@
     </button>
 
     <!-- JAVASCRIPT -->
-
     <script src="wedding.config.js"></script>
     <script src="js/script.js"></script>
     <script src="js/wedding-features.js"></script>

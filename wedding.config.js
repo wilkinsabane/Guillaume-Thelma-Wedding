@@ -1,183 +1,132 @@
 /**
  * ====================================================================
- * WEDDING INVITATION CONFIGURATION
+ * WEDDING INVITATION CONFIGURATION — GUILLAUME & THELMA
  * ====================================================================
- * Customize this single file to completely transform the wedding website
- * for any couple! All texts, dates, events, venues, and media are managed here.
+ * Central configuration file for Guillaume & Thelma's Wedding Website.
  */
 
 const WEDDING_CONFIG = {
-    // Couple Information
     couple: {
         partner1: "Guillaume",
         partner2: "Thelma",
-        partner1Full: "Guillaume Abane",
-        partner2Full: "Thelma Ndoh",
-        title: "Guillaume & Thelma | Wedding Celebration",
+        monogram: "G & T",
+        title: "Guillaume & Thelma | 27 — 28 November 2026",
         openingSubtitle: "TOGETHER WITH THEIR FAMILIES",
         heroEyebrow: "WE ARE GETTING MARRIED",
-        storyHeading: "Two hearts,<br>one beautiful journey.",
-        storyText: "With grateful hearts and immense joy, we invite you to witness and celebrate the beginning of our forever together. Your presence, love, and prayers mean the world to us as we unite as one.",
-        closingHeading: "Thank you for being<br>part of our story.",
-        footerTagline: "OUR BEGINNING. OUR FOREVER.",
-        footerCopy: "With love, always."
+        locationSummary: "LIMBE, CAMEROON",
+        storyHeadline: "The Day I Met My Forever",
+        storySubheadline: "The Story of Guillaume & Thelma",
+        storyPullQuote: "“We went to Teacher Training College to prepare for our careers. Little did we know that, somewhere between the lessons and the dreams, life was preparing one of its most beautiful lessons for us. The lesson was love. The blessing was you. And the journey ahead is forever.”",
+        storySignoff: "Forever yours, Guillaume ❤️ Thelma",
+        closingHeading: "Thank you for being<br>part of our forever.",
+        footerTagline: "THE LESSON WAS LOVE • THE BLESSING WAS YOU",
+        footerCopy: "Guillaume & Thelma • 27–28 November 2026 • Limbe"
     },
 
-    // Dates & Countdown
     dates: {
         displayRange: "27 — 28 NOVEMBER 2026",
-        // Format: YYYY-MM-DDTHH:mm:ss+Timezone
-        countdownTarget: "2026-11-27T10:00:00+01:00",
-        countdownDisplayDate: "27 NOVEMBER 2026",
-        countdownMessageBefore: "Until we begin our forever.",
-        countdownMessageAfter: "The celebration has begun!"
+        countdownTarget: "2026-11-27T16:00:00+01:00",
+        countdownDisplayDate: "27 NOVEMBER 2026 • 4:00 PM",
+        countdownMessageBefore: "Until we begin our forever in Limbe.",
+        countdownMessageAfter: "Our forever has begun!"
     },
 
-    // Visual Palette & Theme
     theme: {
-        paletteName: "Noir & Champagne Gold",
-        primaryBg: "#11100f",
-        cardBg: "rgba(255, 255, 255, 0.04)",
-        cardBorder: "rgba(255, 255, 255, 0.12)",
-        accentColor: "#d4af37",
-        textPrimary: "#ffffff",
-        textMuted: "rgba(255, 255, 255, 0.72)"
-    },
-
-    // Dress Code & Palette Guide for Guests
-    dressCode: {
-        enabled: true,
-        title: "DRESS CODE & PALETTE",
-        subtitle: "We would love for you to celebrate in elegance with us.",
-        note: "Formal / Traditional attire. Feel free to incorporate our wedding tones:",
+        paletteName: "Burgundy, Champagne Gold & Sage Green",
         colors: [
-            { name: "Onyx Black", hex: "#11100F", textDark: false },
-            { name: "Champagne Gold", hex: "#D4AF37", textDark: true },
-            { name: "Warm Ivory", hex: "#F5F0E6", textDark: true },
-            { name: "Royal Burgundy", hex: "#6E1B3B", textDark: false }
+            {
+                name: "Burgundy",
+                hex: "#6E1B33",
+                role: "Deep Romance & Passion"
+            },
+            {
+                name: "Champagne Gold",
+                hex: "#D4AF37",
+                role: "Timeless Celebration"
+            },
+            {
+                name: "Sage Green",
+                hex: "#849B82",
+                role: "Grace & New Beginnings"
+            }
         ]
     },
 
-    // Multi-Day Itinerary / Events
     events: [
         {
             id: "cultural-rites",
             number: "01",
-            type: "CULTURAL RITES",
-            title: "Our Cultural Celebration",
-            dateDisplay: "27 November 2026",
-            dayOfWeek: "Friday",
-            timeDisplay: "Please arrive early",
+            dayBadge: "DAY ONE • FRIDAY",
+            type: "CULTURAL CELEBRATION",
+            title: "Traditional & Cultural Rites",
+            dateDisplay: "Friday, 27th November 2026",
+            timeDisplay: "4:00 PM Prompt",
             city: "Limbe",
-            venue: "Limbe Cultural Grounds",
-            mapUrl: "https://maps.google.com/?q=Limbe,+Cameroon",
+            venue: "Family Residence, Mile 4 Promise Land",
+            mapUrl: "https://maps.google.com/?q=Mile+4+Limbe,+Cameroon",
             calendar: {
-                title: "Guillaume & Thelma - Cultural Rites",
-                startIso: "2026-11-27T10:00:00",
-                endIso: "2026-11-27T18:00:00",
-                location: "Limbe, Cameroon",
-                description: "Join Guillaume & Thelma for their traditional cultural rites in Limbe."
+                title: "Guillaume & Thelma — Cultural Rites",
+                startIso: "2026-11-27T16:00:00",
+                endIso: "2026-11-27T22:00:00",
+                location: "Family Residence, Mile 4 Promise Land, Limbe",
+                description: "Cultural Rites celebration for Guillaume & Thelma at the Family Residence, Mile 4 Promise Land, Limbe (4:00 PM)."
             }
         },
         {
             id: "civil-wedding",
             number: "02",
-            type: "CIVIL WEDDING & RECEPTION",
-            title: "A New Beginning & Reception",
-            dateDisplay: "28 November 2026",
-            dayOfWeek: "Saturday",
-            timeDisplay: "1:00 PM (Ceremony) • Reception to Follow",
+            dayBadge: "DAY TWO • SATURDAY",
+            type: "CIVIL WEDDING, BLESSINGS & RECEPTION",
+            title: "Civil Signing, Nuptial Blessings & Grand Reception",
+            dateDisplay: "Saturday, 28th November 2026",
+            timeDisplay: "10:00 AM • 12:00 PM • 4:00 PM",
             city: "Limbe",
-            venue: "Limbe Celebration Hall",
-            mapUrl: "https://maps.google.com/?q=Limbe,+Cameroon",
+            venue: "Limbe 1 Council & Ace Event Center, Mile 2 Limbe",
+            mapUrl: "https://maps.google.com/?q=Ace+Event+Center+Mile+2+Limbe,+Cameroon",
+            scheduleBreakdown: [
+                {
+                    time: "10:00 AM",
+                    activity: "Civil Signing",
+                    place: "Limbe 1 Council"
+                },
+                {
+                    time: "12:00 PM",
+                    activity: "Nuptial Blessings",
+                    place: "Blessing Ceremony"
+                },
+                {
+                    time: "4:00 PM",
+                    activity: "Grand Reception",
+                    place: "Ace Event Center, Mile 2 Limbe"
+                }
+            ],
             calendar: {
-                title: "Guillaume & Thelma - Civil Wedding & Reception",
-                startIso: "2026-11-28T13:00:00",
+                title: "Guillaume & Thelma — Civil Wedding, Blessings & Reception",
+                startIso: "2026-11-28T10:00:00",
                 endIso: "2026-11-28T23:00:00",
-                location: "Limbe, Cameroon",
-                description: "Civil wedding ceremony followed by celebration banquet for Guillaume & Thelma."
+                location: "Limbe 1 Council (10:00 AM) & Ace Event Center, Mile 2 Limbe (4:00 PM)",
+                description: "10:00 AM: Civil Signing at Limbe 1 Council | 12:00 PM: Blessings | 4:00 PM: Reception at Ace Event Center, Mile 2 Limbe."
             }
         }
     ],
 
-    // Photo Gallery (Optimized WebP images with fallbacks)
-    gallery: [
-        {
-            id: "photo-1",
-            src: "images/gallery-1.webp",
-            fallback: "images/gallery-1.png",
-            aspectClass: "gallery-large",
-            alt: "Guillaume and Thelma - Regal Portrait"
-        },
-        {
-            id: "photo-2",
-            src: "images/gallery-2.webp",
-            fallback: "images/gallery-2.png",
-            aspectClass: "gallery-small",
-            alt: "Guillaume and Thelma - Laughing on Sofa"
-        },
-        {
-            id: "photo-3",
-            src: "images/gallery-3.webp",
-            fallback: "images/gallery-3.png",
-            aspectClass: "gallery-medium",
-            alt: "Guillaume and Thelma - Intimate Gaze"
-        },
-        {
-            id: "photo-4",
-            src: "images/gallery-4.webp",
-            fallback: "images/gallery-4.png",
-            aspectClass: "gallery-wide",
-            alt: "Guillaume and Thelma - Showing the Ring"
-        },
-        {
-            id: "photo-5",
-            src: "images/gallery-5.webp",
-            fallback: "images/gallery-5.png",
-            aspectClass: "gallery-medium",
-            alt: "Guillaume and Thelma - Formal Standing"
-        },
-        {
-            id: "photo-6",
-            src: "images/gallery-6.webp",
-            fallback: "images/gallery-6.png",
-            aspectClass: "gallery-small",
-            alt: "Thelma and Guillaume - Elegant Pose"
-        },
-        {
-            id: "photo-7",
-            src: "images/gallery-7.webp",
-            fallback: "images/gallery-7.png",
-            aspectClass: "gallery-medium",
-            alt: "Guillaume and Thelma - Casual Joy"
-        },
-        {
-            id: "photo-8",
-            src: "images/save-the-date.webp",
-            fallback: "images/save-the-date.png",
-            aspectClass: "gallery-wide",
-            alt: "Guillaume and Thelma - Save The Date Limbe"
-        }
-    ],
-
-    // WhatsApp RSVP Configuration
     rsvp: {
-        // Change to the couple's or wedding planner's WhatsApp number (country code + number without plus or spaces)
-        whatsappNumber: "237670000000",
-        weddingNameHeader: "Guillaume & Thelma Wedding Celebration",
-        successMessage: "Thank you! Opening WhatsApp to send your confirmation...",
-        allowMessage: true
+        whatsappNumber: "237683532487",
+        whatsappNumberSecondary: "237674663789",
+        contacts: [
+            { label: "RSVP Line 1 (+237 683 532 487)", phone: "237683532487", display: "+237 683 532 487" },
+            { label: "RSVP Line 2 (+237 674 663 789)", phone: "237674663789", display: "+237 674 663 789" }
+        ]
     },
 
-    // Audio & Soundtrack
     audio: {
         enabled: true,
+        trackTitle: "Shane Filan — Beautiful In White",
         source: "audio/wedding-song.mp3",
-        initialVolume: 0.25
+        initialVolume: 0.35
     }
 };
 
-// Export for module systems or attach to window
 if (typeof module !== "undefined" && module.exports) {
     module.exports = WEDDING_CONFIG;
 } else {
