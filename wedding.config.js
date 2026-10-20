@@ -75,12 +75,12 @@ const WEDDING_CONFIG = {
                 },
                 {
                     time: "12:00 PM",
-                    activity: "Nuptial Blessings",
+                    activity: "Nuptial Blessings — Seeking God's Blessings Upon Our Union",
                     place: "Followed immediately by the Grand Reception"
                 },
                 {
                     time: "Followed Immediately",
-                    activity: "Grand Reception",
+                    activity: "Traditional Marriage Celebration & Wedding Banquet",
                     place: "Ace Event Center, Mile 2 Limbe"
                 }
             ],
