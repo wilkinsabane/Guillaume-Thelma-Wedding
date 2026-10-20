@@ -167,7 +167,7 @@
             }
 
             lines.push(divider);
-            lines.push(`*27-28 Nov 2026 | Limbe | #TG2026*`);
+            lines.push(`*28 Nov 2026 | Limbe | #TG2026*`);
 
             const fullText = lines.join('\n');
             const encodedText = encodeURIComponent(fullText);

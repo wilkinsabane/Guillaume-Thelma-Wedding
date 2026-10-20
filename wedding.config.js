@@ -13,23 +13,23 @@ const WEDDING_CONFIG = {
         shortMonogram: "TG",
         hashtag: "#TG2026",
         code: "TG2026",
-        title: "Thelma & Guillaume | #TG2026 • 27 — 28 November 2026",
+        title: "Thelma & Guillaume | #TG2026 • 28 November 2026",
         openingSubtitle: "TOGETHER WITH THEIR FAMILIES",
         heroEyebrow: "WE ARE GETTING MARRIED",
         locationSummary: "LIMBE, CAMEROON • #TG2026",
         storyHeadline: "The Day I Met My Forever",
         storySubheadline: "The Story of Thelma & Guillaume",
-        storyPullQuote: "“We went to Teacher Training College to prepare for our careers. Little did we know that, somewhere between the lessons and the dreams, life was preparing one of its most beautiful lessons for us. The lesson was love. The blessing was you. And the journey ahead is forever.”",
+        storyPullQuote: "“We went to Teacher Training College to prepare for our careers. Little did we know that, somewhere between the lessons and the dreams, life was preparing one of its most beautiful lessons for us. The lesson was love. The blessing from God. And the journey ahead is forever.”",
         storySignoff: "Forever yours, Thelma ❤️ Guillaume",
-        closingHeading: "Thank you for being<br>part of our forever.",
-        footerTagline: "THE LESSON WAS LOVE • THE BLESSING WAS YOU",
-        footerCopy: "Thelma & Guillaume • #TG2026 • 27–28 November 2026 • Limbe"
+        closingHeading: "The lesson was love.<br>The blessing from God.",
+        footerTagline: "THE LESSON WAS LOVE • THE BLESSING FROM GOD",
+        footerCopy: "Thelma & Guillaume • #TG2026 • 28 November 2026 • Limbe"
     },
 
     dates: {
-        displayRange: "27 — 28 NOVEMBER 2026",
-        countdownTarget: "2026-11-27T16:00:00+01:00",
-        countdownDisplayDate: "27 NOVEMBER 2026 • 4:00 PM",
+        displayRange: "28 NOVEMBER 2026",
+        countdownTarget: "2026-11-28T10:00:00+01:00",
+        countdownDisplayDate: "SATURDAY, 28 NOVEMBER 2026 • 10:00 AM",
         countdownMessageBefore: "Until we begin our forever in Limbe.",
         countdownMessageAfter: "Our forever has begun!"
     },
@@ -57,32 +57,13 @@ const WEDDING_CONFIG = {
 
     events: [
         {
-            id: "cultural-rites",
-            number: "01",
-            dayBadge: "DAY ONE • FRIDAY",
-            type: "CULTURAL CELEBRATION",
-            title: "Traditional & Cultural Rites",
-            dateDisplay: "Friday, 27th November 2026",
-            timeDisplay: "4:00 PM Prompt",
-            city: "Limbe",
-            venue: "Family Residence, Mile 4 Promise Land",
-            mapUrl: "https://maps.google.com/?q=Mile+4+Limbe,+Cameroon",
-            calendar: {
-                title: "Thelma & Guillaume (#TG2026) — Cultural Rites",
-                startIso: "2026-11-27T16:00:00",
-                endIso: "2026-11-27T22:00:00",
-                location: "Family Residence, Mile 4 Promise Land, Limbe",
-                description: "Cultural Rites celebration for Thelma & Guillaume (#TG2026) at the Family Residence, Mile 4 Promise Land, Limbe (4:00 PM)."
-            }
-        },
-        {
             id: "civil-wedding",
-            number: "02",
-            dayBadge: "DAY TWO • SATURDAY",
+            number: "01",
+            dayBadge: "SATURDAY • 28 NOVEMBER 2026",
             type: "CIVIL WEDDING, BLESSINGS & RECEPTION",
             title: "Civil Signing, Nuptial Blessings & Grand Reception",
             dateDisplay: "Saturday, 28th November 2026",
-            timeDisplay: "10:00 AM • 12:00 PM • 4:00 PM",
+            timeDisplay: "10:00 AM (Civil) • 12:00 PM (Blessings followed immediately by Reception)",
             city: "Limbe",
             venue: "Limbe 1 Council & Ace Event Center, Mile 2 Limbe",
             mapUrl: "https://maps.google.com/?q=Ace+Event+Center+Mile+2+Limbe,+Cameroon",
@@ -95,10 +76,10 @@ const WEDDING_CONFIG = {
                 {
                     time: "12:00 PM",
                     activity: "Nuptial Blessings",
-                    place: "Blessing Ceremony"
+                    place: "Followed immediately by the Grand Reception"
                 },
                 {
-                    time: "4:00 PM",
+                    time: "Followed Immediately",
                     activity: "Grand Reception",
                     place: "Ace Event Center, Mile 2 Limbe"
                 }
@@ -106,9 +87,9 @@ const WEDDING_CONFIG = {
             calendar: {
                 title: "Thelma & Guillaume (#TG2026) — Civil Wedding, Blessings & Reception",
                 startIso: "2026-11-28T10:00:00",
-                endIso: "2026-11-28T23:00:00",
-                location: "Limbe 1 Council (10:00 AM) & Ace Event Center, Mile 2 Limbe (4:00 PM)",
-                description: "Thelma & Guillaume (#TG2026) — 10:00 AM: Civil Signing at Limbe 1 Council | 12:00 PM: Blessings | 4:00 PM: Reception at Ace Event Center, Mile 2 Limbe."
+                endIso: "2026-11-28T22:00:00",
+                location: "Limbe 1 Council (10:00 AM) & Ace Event Center, Mile 2 Limbe (After 12:00 PM Blessings)",
+                description: "Thelma & Guillaume (#TG2026) — 10:00 AM: Civil Signing at Limbe 1 Council | 12:00 PM: Nuptial Blessings followed immediately by the Grand Reception at Ace Event Center, Mile 2 Limbe."
             }
         }
     ],
